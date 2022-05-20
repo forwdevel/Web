@@ -1,0 +1,97 @@
+* {
+	/* 여백 초기화 */
+	margin:  0px;
+	padding: 0px;
+	/* 글씨체 설정 */
+	font-family: sans-serif;
+	/* 밑줄 삭제 */
+	text-decoration: none;
+	/* 영어 첫글자 대문자화 */
+	text-transform: capitalize;
+}
+
+body {
+	/* 배경이미지 넣기 */
+	/* 모자라도 반복 안함 */
+	background: url(toto.jpg) no-repeat;
+}
+
+header {
+	/* 좌우로 밀려 정렬된 플렉스를 고정 */
+	/* 페이지가 작아지거나 커져도 같이 이동 */
+	position: fixed;
+	/* header 박스 위치 딱 붙여서 배치 */
+	top:  0; left: 0; right: 0;
+	background-color: #fff;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+	padding: 20px 7%;
+	/* flex 작동*/
+	display: flex;
+	/* 세로축 */
+	/* 가운데 정렬 */
+	align-items: center;
+	/* 가로축 */
+	/* 좌우로 밀기 */
+	justify-content: space-between;
+	/* position 수직 정렬 위치 */
+	z-index: 1000;
+}
+
+header #logo {
+	color:#333;
+	font-size: 25px;
+	font-weight: bolder;
+}
+header #navbar ul {
+	list-style: none;
+}
+
+header #navbar ul li {
+	/* 조상 종속 정렬 */
+	position: relative;
+	/* 수평 정렬 */
+	float: left;
+}
+
+header #navbar ul li a {
+	display: block;
+	color: #333;
+	font-size: 20px;
+	padding: 20px;
+}
+
+header #navbar ul li a:hover {
+	background: #333;
+	color: #fff;
+}
+
+header #navbar ul li ul {
+	/* 수직 정렬 */
+	/* 조상의 relative가 풀리면서
+		원래 li의 성질인 수직으로 바뀜*/
+	position: absolute;
+	left: 0;
+	/* 글자 안 짤리게*/
+	width: 200px;
+	background: #fff;
+	display: none;
+}
+
+header #navbar ul li ul li {
+	/* 빈 여백을 혼자 다쓰게해서
+	요소가 말려 올라오는거 방지 */
+	width: 100%;
+}
+
+header #navbar ul li ul li ul {
+	/* 설정해준 너비만큼 밀기 */
+	left: 200px;
+	/* 조상의 높이를 기준으로 */
+	top: 0px;
+}
+
+/* 직속 ul 선택 */
+header #navbar ul li:hover > ul {
+	/* 초기값으로 돌려주기 */
+	display: initial;
+}

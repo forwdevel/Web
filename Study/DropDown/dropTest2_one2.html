@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Document</title>
+
+<style>
+.dropdown {
+	display: inline-block;
+	position: relative;
+}
+
+.dropdown-content {
+	display: none;
+	position: relative;
+	width: 100%;
+	overflow: auto;
+	box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+.dropdown-content a {
+	display: block;
+	color: black;
+	padding: 5px;
+	text-decoration: none;
+}
+
+.dropdown-content a:hover {
+	color: #FFFFFF;
+	background-color: #00A4BD;
+}
+</style>
+</head>
+<body>
+	<div class="dropdown">
+		shop &or;
+		<div class="dropdown-content">
+			<a>Blog</a>
+		</div>
+		<div class="dropdown-content">
+			<a>Academy</a>
+		</div>
+		<div class="dropdown-content">
+			<a>Youtube</a>
+		</div>
+	</div>
+</body>
+</html>
