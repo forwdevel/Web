@@ -1,0 +1,207 @@
+body {
+  font-family: consolas;
+  color: #385723;
+}
+
+#currentPage {
+   border-bottom: solid 1px;
+}
+
+.aboutUs-container table, .four-container table, .bottom-container table, .download-container table{
+   border-collapse: collapse;
+   font-size:    15pt;
+   margin-left:  auto;
+   margin-right: auto;
+}
+
+.aboutUs-container {
+   background-color: white;
+   color: #385723;
+}
+
+.container-heading {
+   text-align: center;
+   font-size: 15pt;
+   padding-top: 80px;
+   padding-bottom: 15px;
+   font-weight: bold;
+}
+
+.container-subheading {
+   text-align: center;
+   font-size: 12pt;
+   padding-top: 20px;
+   padding-bottom: 10px;
+   font-weight: bold;
+}
+
+.green-btn{
+   background-color:  #385723;
+   color:               white;
+   border:    solid 2px white;
+   text-align:         center;
+   font-size:             8pt;
+   padding:          7px 20px;
+   margin-bottom:        20px;
+   margin:               auto;
+   display:             block;
+}
+
+.white-btn {
+   background-color:    white;
+   color:             #385723;
+   border:  solid 2px #385723;
+   text-align:         center;
+   font-size:             8pt;
+   padding:          7px 20px;
+   margin-bottom:        20px;
+   margin:               auto;
+   display:             block;
+}
+
+header{
+   background-color: #385723;
+   color: white;
+}
+
+header #logo {
+   position: relative;
+   top: 20px;
+   left: 10px;
+}
+
+header #top {
+   position: absolute;
+   top: 30px;
+   right: 30px;
+}
+
+.container-top {
+   flex-direction: row wrap;
+   justify-content: center;
+   align-items: center;
+   align-content: center;
+   width: 50%
+}
+
+.header-container .container-heading, .header-container .container-contents{
+   background-color: #385723;
+   color: white;
+}
+
+.header-container {
+   padding-bottom: 30px;
+   background-color: #385723;
+}
+
+.aboutUs-container {
+   padding-bottom: 50px;
+}
+
+.four-container {
+   padding-top: 20px;
+   padding-bottom: 20px;
+   background-color: #385723;
+}
+
+.four-container .container-subheading {
+   text-align: left;
+   font-size: 12pt;
+   padding-left: 10pt;
+   padding-top: 20px;
+   padding-bottom: 10px;
+   background-color: #385723;
+   color: white;
+}
+
+.header-container .container-contents {
+   text-align: center;
+   font-size: 8pt;
+   padding-top: 10px;
+   padding-bottom: 20px;
+}
+
+.container-contents-white{
+   text-align: left;
+   font-size: 8pt;
+   padding-top: 10px;
+   padding-bottom: 20px;
+}
+
+.four-container .container-contents{
+   text-align: left;
+   font-size: 8pt;
+   padding-left: 10pt;
+   padding-top: 10px;
+   padding-bottom: 20px;
+   background-color: #385723;
+   color: white;
+}
+
+.four-container .green-btn {
+   margin-left: 30px;
+}
+
+.download-container .container-subheading {
+   text-align: left;
+}
+
+.img{
+   text-align: center;
+}
+
+.download-container {
+   margin-bottom: 20px;
+}
+
+.bottom-container {
+   background-color: #385723;
+   color: white;
+   padding-bottom: 30px;
+}
+
+.bottom-container .container-subheading{
+   margin-top: 20px;
+   text-align: left;
+}
+
+.bottom-container ul{
+   padding: 0;
+   margin-right: 100px;
+}
+
+.bottom-container li{
+   list-style: square;
+   font-size: 8pt;
+}
+
+.bottom-container .green-btn{
+   margin-top: 10px;
+   display:inline;
+}
+
+footer *{
+   margin-left: auto;
+   margin-right: auto;
+   text-align: center;
+   font-size: 12pt;
+}
+
+.footer-img {
+   margin-top: 20px;
+   margin-right: 5px;
+   margin-left: 5px;
+}
+
+footer .container-subheading{
+   padding-top: 5px;
+}
+
+footer .footer-contents {
+   font-size: 8pt;
+}
+
+a {
+   text-decoration: none;
+   color: white;
+}

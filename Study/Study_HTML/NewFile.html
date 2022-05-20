@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Document</title>
+</head>
+<body>
+   <!--버튼 업그레이드, using while
+   다크모드일때는
+   a 태그의 모든 요소의 색상이 powderblue로 변하게!
+   데이모드에서는 다시 blue로-->
+
+   <input type="button" value="Day" onclick="
+   target = document.querySelector('body').style;
+
+   if(this.value =='Day'){
+      target.color='white';
+      target.backgroundColor='black';
+      this.value = 'Night';
+
+      var anchor = document.querySelectorAll('a');
+      var i = 0;
+
+      while(i < anchor.length){
+         anchor[i].style.color='powderblue';
+         i = i + 1;
+      }
+   }else{
+      target.color='black';
+      target.backgroundColor='white';
+      this.value = 'Day';
+
+      var anchor = document.querySelectorAll('a');
+      var i = 0;
+
+      while(i < anchor.length){
+         anchor[i].style.color='blue';
+         i = i + 1;
+      }
+   }
+   ">
+
+   <h2>함수를 이용한 버튼</h2>
+   <script>
+      function dayToNight(){
+         target = document.querySelector('body').style;
+
+         if(this.value =='Day'){
+            target.color='white';
+            target.backgroundColor='black';
+            this.value = 'Night';
+
+            var anchor = document.querySelectorAll('a');
+            var i = 0;
+
+            while(i < anchor.length){
+               anchor[i].style.color='powderblue';
+               i = i + 1;
+            }
+
+            this.value = 'Night';
+         }else{
+            target.color='black';
+            target.backgroundColor='white';
+            this.value = 'Day';
+
+            var anchor = document.querySelectorAll('a');
+            var i = 0;
+
+            while(i < anchor.length){
+               anchor[i].style.color='blue';
+               i = i + 1;
+            }
+         }
+      }
+   </script>
+   <input type="button" value="Day" onclick="dayToNight();">
+
+   <br>
+   <a href="while.html" style="font-size: 50px;">HTML</a><br>
+   <a href="while.html" style="font-size: 50px;">CSS</a><br>
+   <a href="while.html" style="font-size: 50px;">JAVA</a><br>
+   <a href="while.html" style="font-size: 50px;">JAVASCRIPT</a><br>
+   <a href="while.html" style="font-size: 50px;">PHP</a><br>
+</body>
+</html>

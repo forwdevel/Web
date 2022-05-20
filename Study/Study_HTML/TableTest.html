@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Table Test</title>
+<style>
+table, tr, th, td {
+	border: solid 1px black;
+	border-collapse: collapse;
+	padding: 8px;
+}
+</style>
+</head>
+<body>
+	<h3>KTX 열차 시간표</h3>
+	<table>
+		<!-- 표에 넣고자 하는 내용 -->
+		<tr>
+			<!-- 하나의 행 -->
+			<th>출발</th>
+			<!-- 테이블 각 열의 제목 : Table header -->
+			<th>도착</th>
+			<th>객실</th>
+			<th>요금</th>
+		</tr>
+		<tr>
+			<td>서울(17:25)</td>
+			<!-- 제목을 제외한 각 셀 표현 -->
+			<td>부산(20:07)</td>
+			<td>일반실</td>
+			<td>50,800원</td>
+		</tr>
+		<tr>
+			<td>서울(18:00)</td>
+			<td>부산(20:35)</td>
+			<td>특실</td>
+			<td>83,700원</td>
+		</tr>
+		<tr>
+			<td>서울(18:15)</td>
+			<td>부산(20:50)</td>
+			<td>일반실</td>
+			<td>50,800원</td>
+		</tr>
+	</table>
+
+	<h3>일기예보</h3>
+	<table>
+		<tr>
+			<!-- rowspan : 행 병합 -->
+			<!-- colspan : 열 병합 -->
+			<th rowspan='2'>지역</th>
+			<th colspan='2'>27일(목)</th>
+			<th colspan='2'>28일(금)</th>
+			<th colspan='2'>29일(토)</th>
+		</tr>
+		<tr>
+			<td>오전</td>
+			<td>오후</td>
+			<td>오전</td>
+			<td>오후</td>
+			<td>오전</td>
+			<td>오후</td>
+		</tr>
+		<tr>
+			<td>서울<br>경기도
+			</td>
+			<td>shine</td>
+			<td>shine</td>
+			<td>shine</td>
+			<td>rain</td>
+			<td>rain</td>
+			<td>rain</td>
+		</tr>
+		<tr>
+			<td>제주도</td>
+			<td>shine</td>
+			<td>shine</td>
+			<td>shine</td>
+			<td>rain</td>
+			<td>rain</td>
+			<td>rain</td>
+		</tr>
+	</table>
+</body>
+</html>

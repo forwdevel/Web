@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Document</title>
+</head>
+<body>
+   <h1>Day & Night Mode</h1>
+
+   <!--document.querySelector('body'):
+   body태그 선택, id선택자도 클래스 선택자도 가능-->
+   <input type="button" value="Night" onclick="
+      document.querySelector('body').style.backgroundColor='black';
+      document.querySelector('body').style.color='white';
+   ">
+   <input type="button" value="Day" onclick="
+      document.querySelector('body').style.backgroundColor='white';
+      document.querySelector('body').style.color='black';
+   ">
+
+   <!--토글 on/off기능이 있는 버튼-->
+   <!--위의 기능을 하나의 버튼으로 합치기-->
+
+   <input type="button" value="Day" onclick="
+      if(this.value=='Day'){
+         document.querySelector('body').style.backgroundColor='black';
+         document.querySelector('body').style.color='white';
+         this.value = 'Night';
+      } else {
+         document.querySelector('body').style.backgroundColor='white';
+         document.querySelector('body').style.color='black';
+         this.value = 'Day';
+      }
+   ">
+
+   <script>
+      //자바 스크립트 줄바꿈은 \n이 아닌 <br>로
+      document.write("<br>1<br>2");
+   </script>
+
+   <p>Day 버튼을 누르면, background: white; color: black;</p>
+   <p>Night 버튼을 누르면, background: black; color: white;</p>
+</body>
+</html>

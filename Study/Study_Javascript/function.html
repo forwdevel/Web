@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Document</title>
+</head>
+<body>
+   <h1>함수 테스트</h1>
+
+   <h2>SUM 함수</h2>
+   <script>
+      function sum(left, right){
+         document.write("sum= "+left+right+'<br>');
+      }
+      function sumreturn(left, right){
+         return left+right;
+      }
+      function sumColorRed(left, right){
+         document.write('<div style="color=red;">'+"left + right= "+left+right+'</div>');
+      }
+      
+      sum(2,3);
+      sum(3,4);
+      sumColorRed(2,3);
+      sumColorRed(3,4);
+   </script>
+
+</body>
+</html>

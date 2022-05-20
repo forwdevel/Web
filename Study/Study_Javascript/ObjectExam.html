@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Document</title>
+</head>
+<body>
+	<h1>object</h1>
+	<h2>Create</h2>
+	<script type="text/javascript">
+		// 배열은 대괄호, 객체는 중괄호
+		var coworkers = {
+			"programmer" : "egoing",
+			"designer" : "Leezche",
+		};
+
+		document.write("Programmer: " + coworkers.programmer + "<br>");
+		document.write("Designer: " + coworkers.designer + "<br>");
+
+		//객체 추가
+		coworkers.bookeeper = "duru"; //띄어쓰기 없을 때
+		coworkers["data scientist"] = "taeho"; //띄어쓰기 있을 때 
+
+		document.write("bookeeper: " + coworkers.bookeeper + "<br>");
+		document.write("data scientist: " + coworkers["data scientist"]
+				+ "<br>" + "<br>");
+
+		//for in : 객체에 있는것을 순차적으로 가져옴
+		// coworkers라는 객체 안에 있는 key값들을 가져오는 반복문
+		// key값은 programmer,designer같은 앞에 있는 라벨들 => 배열의 인덱스와 동일
+		// coworkers.key말고 coworker[key]로 해야 함
+		for ( var key in coworkers) {
+			document.write(key + " : " + coworkers[key] + "<br>")
+		}
+	</script>
+
+	<h2>Property and Method</h2>
+
+	<script type="text/javascript">
+		coworkers.showAll = function() {
+			for ( var key in this) {
+				document.write(key + " : " + this[key] + "<br>")
+			}
+		}
+		// 이렇게 함수 정의도 가능 var funcname = function() {}
+
+		coworkers.showAll();
+	</script>
+</body>
+</html>

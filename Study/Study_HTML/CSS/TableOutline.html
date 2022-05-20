@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Document</title>
+   <style>
+      table, th, td {
+         border: solid 1px black;
+      }
+
+      table {
+         border-collapse: collapse;    /* 하나의 가는 실선 */
+      }
+
+      th {
+         width:    80px;
+         padding:   6px;
+      }
+
+      td {
+         padding:       6px;
+         text-align: center;          /* 셀 내부 요소 가운데 정렬 */
+      }
+
+      #day {
+         background-color: #adf0f4;
+      }
+
+      #title {
+         background-color: #adcff4;
+      }
+   </style>
+</head>
+<body>
+   <h2>고속버스 예매</h2>
+   <table>
+   <tr id='day'>
+      <th colspan='4'>서울 &lt=&gt 대전 2020.9.6 수</th>
+   </tr>
+   <tr id='title'>
+      <th>출발</th>
+      <th>버스회사</th>
+      <th>등급</th>
+      <th>예약가능</th>
+   </tr>
+   <tr>
+      <td>11:50</td>
+      <td>한진고속</td>
+      <td>우등</td>
+      <td><img src="12.jpg" width="60" height="30"></td>
+   </tr>
+   <tr>
+      <td>12:50</td>
+      <td>천일고속</td>
+      <td>고속</td>
+      <td><img src="12.jpg" width="60" height="30"></td>
+   </tr>
+   <tr>
+      <td>13:50</td>
+      <td>한진고속</td>
+      <td>우등</td>
+      <td><img src="12.jpg" width="60" height="30"></td>
+   </tr>
+   </table>
+</body>
+</html>

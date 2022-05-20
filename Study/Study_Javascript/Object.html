@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<!--버튼 업그레이드, using while
+   다크모드일때는
+   a 태그의 모든 요소의 색상이 powderblue로 변하게!
+   데이모드에서는 다시 blue로-->
+	<script>
+		var Body = {
+				anchorSetColor: function(color) {
+					var anchor = document.querySelectorAll('a');
+					var i = 0;
+
+					while (i < anchor.length) {
+						anchor[i].style.color = color;
+						i = i + 1;
+					}
+				},
+				
+				setColor: function(self) {
+					if (self.value == 'Day') {
+						document.querySelector('body').style.color = 'white';
+						document.querySelector('body').style.backgroundColor = 'black';
+						self.value = 'Night';
+						this.anchorSetColor('powderblue');
+					} else {
+						document.querySelector('body').style.color = 'black';
+						document.querySelector('body').style.backgroundColor = 'white';
+						self.value = 'Day';
+						this.anchorSetColor('blue');
+					}
+				}
+		}
+	</script>
+
+	<input type="button" value="Day" onclick="Body.setColor(this);">
+
+	<br>
+	<a href="#" style="font-size: 20px;">HTML</a>
+	<br>
+	<a href="#" style="font-size: 20px;">CSS</a>
+	<br>
+	<a href="#" style="font-size: 20px;">JAVA</a>
+	<br>
+	<a href="#" style="font-size: 20px;">JAVASCRIPT</a>
+	<br>
+	<a href="#" style="font-size: 20px;">PHP</a>
+	<br>
+</body>
+</html>

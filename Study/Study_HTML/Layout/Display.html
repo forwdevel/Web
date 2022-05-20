@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Document</title>
+   <style>
+      li {
+         list-style-type: none; /* 글머리 기호 제거 */
+      }
+
+      #v_menu {
+         width: 150px;
+      }
+
+      #v_menu li {   /*후손 선택자: 선택자 하위의 선택자 설정*/
+         padding:5px;
+         border-bottom: dotted 1px black;
+      }
+
+      #h_menu li {   /*후손 선택자: 선택자 하위의 선택자 설정*/
+         display: inline;
+      }
+
+      .menus {
+         margin: 0 20px 0 20px;
+         color:          green;
+      }
+   </style>
+</head>
+<body>
+   <!--display 속성: 기본 속성 무시하고 인라인과 블록 사용하기-->
+
+   <h3>1. 세로 메뉴</h3>
+   <ul id='v_menu'>
+      <li>CEO 인사말</li>
+      <li>조직도</li>
+      <li>전화번호 안내</li>
+      <li>찾아오시는 길</li>
+   </ul>
+   <h3>2. 가로 메뉴</h3>
+   <ul id='h_menu'>
+      <li class='menus'>회사소개</li>
+      <li>|</li>
+      <li class='menus'>제품안내</li>
+      <li>|</li>
+      <li class='menus'>고객센터</li>
+      <li>|</li>
+      <li class='menus'>매장안내</li>
+   </ul>
+</body>
+</html>
