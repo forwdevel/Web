@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header style="border-bottom: rgb(194, 194, 194) 1px solid; margin-bottom: 20px;">
+        <h2>&nbsp;&nbsp;&nbsp;가입 양식</h2>
+    </header>
+    <section style="border-bottom: rgb(194, 194, 194) 1px solid; padding-bottom: 20px;">
+        <table>
+            <tr>
+                <td style="text-align: right;"><label for="id">아이디:</label></td>
+                <td><input type="text" id="id"></td>
+            </tr>
+            <tr>
+                <td style="text-align: right;"><label for="pw">비밀번호:</label></td>
+                <td><input type="password" id="pw"></td>
+            </tr>
+            <tr>
+                <td style="text-align: right;"><label for="pw">비밀번호 확인: </label></td>
+                <td><input type="password" id="pw"></td>
+            </tr>
+            <tr>
+                <td style="text-align: right;"><label for="id">이름: </label></td>
+                <td><input type="text" id="id"></td>
+            </tr>
+            <tr>
+                <td style="text-align: right;"><label for="fm">성별: </label></td>
+                <td>
+                    <form id="fm">
+                        <input type="radio">여성&nbsp;&nbsp;&nbsp;
+                        <input type="radio">남성
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: right;"><label for="num">휴대전화: </label></td>
+                <td>
+                    <form id="num">
+                        
+                        <select name="" id="num">
+                            <option value="">010</option>
+                            <option value="">02</option>
+                            <option value="">070</option>
+                            <option value="">031</option>
+                        </select>
+                        -
+                        <input type="text" size="2">
+                        -
+                        <input type="text" size="2">
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: right;"><label for="email" >이메일:</label></td>
+                <td>
+                    <form action="email">
+                        <input id="" type="email" size="10"></input>
+                        @
+                        <select name="" id="">
+                            <option>선택</option>
+                            <option>gmail.com</option>
+                            <option>naver.com</option>
+                            <option>daum.net</option>
+                        </select>
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: right;"><label for="hobby">취미: </label></td>
+                <td>
+                    <form id="hobby">
+                        <input type="checkbox">음악감상
+                        <input type="checkbox">독서
+                        <input type="checkbox">등산
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" style="text-align: right;"><label for="introduce">자기소개:</label></td>
+                <td><textarea name="" id="introduce" cols="60" rows="8"></textarea></td>
+            </tr>
+            <tr>
+                <td style="text-align: right;"><label for="file">파일 첨부:</label></td>
+                <td><input type="file" id="file">*2MB까지 가능</td>
+            </tr>
+        </table>
+    </section>
+</html>

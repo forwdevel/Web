@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        table th,
+        table td {
+            border: 1px black solid;
+        }
+        
+        #bottom {
+            margin-top: 100px;
+            width: 400px;
+            height: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <table cellspacing="0">
+        <tr>
+            <th rowspan="2">구분</th>
+            <th colspan="3">내행성</th>
+            <th colspan="5">외행성</th>
+        </tr>
+        <tr>
+            <th>수성</th>
+            <th>금성</th>
+            <th>지구</th>
+            <th>화성</th>
+            <th>목성</th>
+            <th>토성</th>
+            <th>천성</th>
+            <th>해성</th>
+        </tr>
+        <tr>
+            <th>지름비</th>
+            <td>0.383</td>
+            <td>0.949</td>
+            <td>1.000</td>
+            <td>0.532</td>
+            <td>11.209</td>
+            <td>9.449</td>
+            <td>4.007</td>
+            <td>3.883</td>
+        </tr>
+    </table>
+    <table id="bottom">
+        <tr>
+            <td colspan="3" style="background-color: red;"></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td rowspan="3"></td>
+        </tr>
+        <tr>
+            <td rowspan="2" style="background-color: green;"></td>
+            <td></td>
+            <td colspan="2" style="background-color: blue;"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+</body>
+
+</html>
