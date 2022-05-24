@@ -59,10 +59,44 @@
 // Object Destructuring Assignment
 
 /** Example (Common)
+ * // 순서 신경쓰지 않아도 됨
  * 
  * let user = {name: "Mike", age: 30};
  * let {name, age} = user;
  * 
- * console.log(name); //"Mike"
+ * console.log(name); // "Mike"
  * console.log(age); // 30
+ */
+
+/** Example (변수 이름 변경)
+ * 
+ * let user = {name: 'Mike', age: 30};
+ * let {name: userName, age: userAge} = user;
+ * 
+ * console.log(userName); // "Mike"
+ * console.log(userAge); // 30
+ */
+
+/** Example (Default value)
+ * 
+ * // gender => undefined
+ * let user = {name: 'Mike', age: 30};
+ * 
+ * let {name, age, gender} = user;
+ * 
+ * // 할당
+ * let {name, age, gender = 'male'} = user;
+ */
+
+/** Example (Default value +)
+ * 
+ * let user = {
+ *      name: 'Jane',
+ *      age: 18,
+ *      gender: 'female'
+ * };
+ * 
+ * let {name, age, gender = 'male'} = user;
+ * 
+ * console.log(gender); // 'female'
  */
