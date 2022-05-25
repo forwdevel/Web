@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="ko" id="no-fouc">
+
+<head>
+
+
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Last-Modified" content="2021-12-13">
+    <meta name="naver-site-verification" content="17c42f120625cf2512d2c43f99527d6afd5ad792" />
+
+
+    <meta name="robots" content="index,follow">
+    <link rel="canonical" href="https://kellogg.co.kr/Index"> <!-- 대표 URL -->
+    <meta name="description" content="농심켈로그 공식 홈페이지 - 브랜드 및 제품, 시리얼과 영양, 사회공헌, 회사 소개 등 정보 제공">
+    <meta name="keywords"
+        content="켈로그, 농심 켈로그, 농심 켈로그&#40;주&#41;, kellogg, 콘푸로스트, 콘푸로스트 라이트슈거, 아몬드 푸레이크, 후르트링, 스페셜K 오리지널, 스페셜K 오리지널, 콘푸로스트 컵시리얼, 아몬드푸레이크 컵시리얼, 후르트링 컵시리얼, 첵스 초코 오리지널, 첵스 초코 스노우초코볼, 첵스 초코 쿠키앤크림, 첵스 초코 마시멜로, 허쉬 초코 크런치, 코코팝스, 첵스 초코 컵시리얼, 리얼 그래놀라, 크랜베리 아몬드 그래놀라, 고소한 현미 그래놀라, 통귀리 그래놀라, 프로틴 그래놀라 요거트 큐브&베리, 프로틴 그래놀라 미숫가루큐브&검정약콩, 프로틴 그래놀라 쉐이크 미숫가루맛, 프로틴 그래놀라 쉐이크 초코맛, 프로틴 바 아몬드앤 호박씨, 현미 푸레이크, 오곡 푸레이크, 알알이 구운 통곡물, 크런치넛 에너지바, 레드베리 에너지바, 베리앤넛 바, 라이스크리스피바 초코맛, 프로틴 바 아몬드앤 호박씨">
+
+    <!-- Facebook meta tags -->
+    <meta property="og:title" content="농심켈로그&#40;주&#41; &#124; Kellogg Korea">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="농심켈로그&#40;주&#41; &#124; Kellogg Korea">
+    <meta property="og:url" content="https://kellogg.co.kr/">
+    <meta property="og:image" content="https://kellogg.co.kr/Images/Common/view_logo.png">
+    <meta property="og:description" content="농심켈로그 공식 홈페이지 - 브랜드 및 제품, 시리얼과 영양, 사회공헌, 회사 소개 등 정보 제공">
+
+    <!-- twitter meta tags -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="농심켈로그&#40;주&#41; &#124; Kellogg Korea">
+    <meta name="twitter:url" content="https://kellogg.co.kr/">
+    <meta name="twitter:image" content="https://kellogg.co.kr/Images/Common/view_logo.png">
+    <meta name="twitter:description" content="농심켈로그 공식 홈페이지 - 브랜드 및 제품, 시리얼과 영양, 사회공헌, 회사 소개 등 정보 제공">
+
+
+    <link rel="shortcut icon" type="image/x-icon" href="/Images/Common/favicon.ico">
+    <link rel="stylesheet" href="/Script/Common/Reset.css">
+    <link rel="stylesheet" href="/Script/Common/Font.css">
+    <link rel="stylesheet" href="/Extension/Swiper/swiper.css">
+
+    <link rel="stylesheet" href="/Script/Common/Main.css?ver=220302_2">
+    <link rel="stylesheet" href="/Script/Common/Sub.css?ver=220302">
+
+
+    <script type="text/javascript" src="/Extension/jQuery/jquery-3.4.1.js"></script>
+    <script type="text/javascript" src="/Extension/Nanoscroller/jquery.nanoscroller.min.js" charset="utf-8"></script>
+    <script type="text/javascript" src="/Extension/Swiper/swiper.min.js" charset="utf-8"></script>
+    <script type="text/javascript" src="/Script/Common/Common.js" charset="utf-8"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-164054801-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-164054801-1');
+    </script>
+
+    <title>농심켈로그(주) | Kellogg Korea</title>
+</head>
+
+<body>
+
+
+    <span itemscope="" itemtype="http://schema.org/Organization">
+        <link itemprop="url" href="https://www.kellogg.co.kr/Index">
+        <a itemprop="sameAs" href="https://www.instagram.com/kelloggsnutrition_kr/"></a>
+        <a itemprop="sameAs" href="https://blog.naver.com/kelloggs_kr"></a>
+        <a itemprop="sameAs" href="https://www.youtube.com/channel/UC0Ab7cfFW5CZ6AUbQvkChVw/featured"></a>
+        <a itemprop="sameAs" href="https://smartstore.naver.com/kellogg"></a>
+    </span>
+
+    <ul class="skipnav">
+        <li><a href="#gnb">주 메뉴 바로가기</a></li>
+        <li><a href="#container">본문 바로가기</a></li>
+    </ul>
+    <!--E: skipnav -->
+
+
+    <div id="wrap">
+
+
+
+
+
+
+
+
+        <header id="header">
+            <div class="inner_wrap">
+                <h1>
+                    <a href="/Index"><img src="/Images/Common/logo_white.png" alt="kellogg's"></a>
+                </h1>
+
+                <nav id="menu_aside">
+                    <div class="gnb_area">
+                        <div class="custom_scroll_content">
+                            <ul class="gnb">
+                                <li><a href="/BrandAndProducts" class="btn"><span>Our Food</span></a>
+                                    <ul>
+                                        <li><a href="/BrandAndProducts">Brand &amp; Products</a></li>
+                                        <li><a href="/KelloggsShop">Kellogg's Shop</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="/Recipes">Recipes</a></li>
+                                <li><a href="/CerealAndNutrition">Health & Nutrition</a></li>
+                                <li><a href="/BetterDays">Better Days</a></li>
+                                <li><a href="/AboutUs" class="btn"><span>Who we are</span></a>
+                                    <ul>
+                                        <li><a href="/AboutUs">About Kellogg’s</a></li>
+                                        <li><a href="/CompanyHistory">Kellogg’s History</a></li>
+                                        <li><a href="/KelloggsValue">Kellogg’s Value</a></li>
+                                        <li><a href="https://www.kelloggcareers.com/global/home.html" target="_blank"
+                                                title="켈로그 글로벌 인재채용 사이트롤 새창 링크">Recruit</a></li>
+                                        <li><a href="/ContactUs">Contact Us</a></li>
+                                    </ul>
+                                </li>
+
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="link_biz">
+                        <div class="sns">
+                            <a href="https://www.youtube.com/channel/UC0Ab7cfFW5CZ6AUbQvkChVw"
+                                onclick="gtag('event', '버튼 클릭 이벤트', {'event_category' : '유튜브 유입 정보', 'event_label' : '모바일 메뉴 유튜브 유입 정보'});"
+                                title="유투브 채널 새창으로 이동" target="_blank" class="youtube"><em class="blind">유투브</em></a>
+                            <a href="https://www.instagram.com/kelloggs_korea/"
+                                onclick="gtag('event', '버튼 클릭 이벤트', {'event_category' : '인스타그램 유입 정보', 'event_label' : '모바일 메뉴 인스타그램 유입 정보'});"
+                                title="인스타그램 새창으로 이동" target="_blank" class="instagram"><em class="blind">인스타그램</em></a>
+                            <a href="https://blog.naver.com/kelloggs_kr" title="네이버 블로그 새창으로 이동"
+                                onclick="gtag('event', '버튼 클릭 이벤트', {'event_category' : '네이버 블로그 유입 정보', 'event_label' : '모바일 메뉴 네이버 블로그 유입 정보'});"
+                                target="_blank" class="naver_blog"><em class="blind">네이버 블로그</em></a>
+                        </div>
+
+                    </div>
+                </nav>
+
+                <!-- S: mobile/tablet 메뉴 열기 영역 -->
+                <button type="button" class="btn btn_type_1 menu_open" title="전체메뉴 열기">
+                    <img src="/Images/Common/img_header_open.png" alt="메뉴열기 버튼">
+                </button>
+                <!-- E: mobile 메뉴 열기 영역 -->
+
+                <!-- out Sns link -->
+                <div class="Out_link_biz">
+                    <div class="sns">
+                        <a href="https://www.youtube.com/channel/UC0Ab7cfFW5CZ6AUbQvkChVw"
+                            onclick="gtag('event', '버튼 클릭 이벤트', {'event_category' : '유튜브 유입 정보', 'event_label' : '헤더 유튜브 유입 정보'});"
+                            title="유투브 채널 새창으로 이동" target="_blank" class="youtube"><em class="blind">유투브</em></a>
+                        <a href="https://www.instagram.com/kelloggs_korea/"
+                            onclick="gtag('event', '버튼 클릭 이벤트', {'event_category' : '인스타그램 유입 정보', 'event_label' : '헤더 인스타그램 유입 정보'});"
+                            title="인스타그램 새창으로 이동" target="_blank" class="instagram"><em class="blind">인스타그램</em></a>
+                        <a href="https://blog.naver.com/kelloggs_kr" title="네이버 블로그 새창으로 이동"
+                            onclick="gtag('event', '버튼 클릭 이벤트', {'event_category' : '네이버 블로그 유입 정보', 'event_label' : '헤더 네이버 블로그 유입 정보'});"
+                            target="_blank" class="naver_blog"><em class="blind">네이버 블로그</em></a>
+                    </div>
+                </div>
+
+            </div><!-- E: inner_wrap  -->
+        </header>
+        <!--E: header -->
+
+
+
+
+
+
+
+
+
+        <div id="container" class="main">
+
+            <!-- 상단 배너 -->
+
+
+
+
+
+
+
+            <section class="sec_visual">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide main_slide_4">
+                            <a href="/BrandAndProductDetail?ProductSequence=1"
+                                title="Brand & Product 콘푸로스트 제품 상세 페이지로 이동">
+                                <div class="img m_ver"><img src="/Images/Main/main2.png" alt="메인이미지"></div>
+                                <div class="mainbg mainbg_2"></div>
+                                <div class="hashtag white gradient">
+                                    <span class="blind">#좋은 것만 드려요~</span>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide main_slide_1">
+                            <div class="img m_ver"><img src="/Images/Main/main3.png?ver=210908" alt="메인이미지"></div>
+                            <div class="mainbg mainbg_3"></div>
+                            <div class="hashtag red gradient">
+                                <span class="blind">#좋은 것만 드려요~</span>
+                            </div>
+                        </div>
+
+
+
+                        <div class="swiper-slide main_slide_2">
+                            <a href="BrandAndProductDetail?ProductSequence=17"
+                                title="Brand & Product 크랜베리 아몬드 그래놀라 제품 상세 페이지로 이동">
+                                <div class="img m_ver"><img src="/Images/Main/main1.png?ver=210908" alt="메인이미지"></div>
+                                <div class="mainbg mainbg_1"></div>
+                                <div class="hashtag red gradient">
+                                    <span class="blind">#좋은 것만 드려요~</span>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="img m_ver shop"><img src="/Images/Main/mobile_main0.png" alt="메인이미지"></div>
+                            <div class="img t_ver"><img src="/Images/Main/tablet_main0.png" alt="메인이미지"></div>
+                            <div class="mainbg mainbg_0"></div>
+                            <div class="hashtag shop">
+                                <em>Kellogg’s Online Shop</em>
+                                <span>맛과 영양을 고루 갖춘 켈로그 제품을 온라인에서 빠르게 주문하고 받아보세요!</span>
+                                <a href="/KelloggsShop" class="more_wrap" title="Kellogg’s shop 보기">
+                                    <em>Kellogg’s shop 보기</em>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide main_slide_5">
+                            <a href="BrandAndProductDetail?ProductSequence=39"
+                                title="Brand & Product 첵스초코 레인보우 제품 상세 페이지로 이동">
+                                <div class="img m_ver"><img src="/Images/Main/main4.png?ver=210426" alt="메인이미지"></div>
+                                <div class="mainbg mainbg_4"></div>
+                                <div class="hashtag red gradient">
+                                    <span class="blind">#좋은 것만 드려요~</span>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next"><em class="blind">다음콘텐츠이동</em></div>
+                    <div class="swiper-button-prev"><em class="blind">이전콘텐츠이동</em></div>
+                </div><!-- E: swiper-container -->
+            </section><!-- E: sec_main -->
+
+            <!-- Brands Cereals 영역 -->
+
+
+
+
+
+
+
+            <section class="brands-cereals_wrap">
+                <div class="container_wrap">
+                    <div class="txt_wrap">
+                        <h2>켈로그의 다양한 브랜드를 만나보세요.</h2>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="/BrandAndProducts?CategoryName=클래식시리얼&SearchKeyword=">
+                                <img src="/Images/Main/img_brands_cereals_classic.png" alt="클래식시리얼">
+                                <strong>클래식시리얼</strong>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/BrandAndProducts?CategoryName=초코시리얼&SearchKeyword=">
+                                <img src="/Images/Main/img_brands_cereals_choco.png" alt="초코시리얼">
+                                <strong>초코시리얼</strong>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/BrandAndProducts?CategoryName=그래놀라&SearchKeyword=">
+                                <img src="/Images/Main/img_brands_cereals_granola.png" alt="그래놀라">
+                                <strong>그래놀라</strong>
+                            </a>
+                        </li>
+                        <li class="m_block_item">
+                            <a href="/BrandAndProducts?CategoryName=프로틴&SearchKeyword=">
+                                <img src="/Images/Main/img_brands_cereals_protein.png" alt="프로틴">
+                                <strong>프로틴</strong>
+                            </a>
+                        </li>
+                        <li class="m_block_item">
+                            <a href="/BrandAndProducts?CategoryName=켈로그바&SearchKeyword=">
+                                <img src="/Images/Main/img_brands_cereals_kelloggbar.png" alt="켈로그바">
+                                <strong>켈로그바</strong>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="m_none_item">
+                        <li>
+                            <a href="/BrandAndProducts?CategoryName=프로틴&SearchKeyword=">
+                                <img src="/Images/Main/img_brands_cereals_protein.png" alt="프로틴">
+                                <strong>프로틴</strong>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/BrandAndProducts?CategoryName=켈로그바&SearchKeyword=">
+                                <img src="/Images/Main/img_brands_cereals_kelloggbar.png?ver=220502" alt="켈로그바">
+                                <strong>켈로그바</strong>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Better Days 페이지 링크 영역 -->
+
+
+
+
+
+
+
+            <section class="betterdays-wrap">
+                <div class="container_wrap">
+                    <h2><img src="/Images/Main/img_better-days_title.png" alt="better days" /></h2>
+                    <div class="text_wrap">
+                        <p>더 나은 내일을 만들기 위해 110여년 동안 기울여온 켈로그의 노력</p>
+                        <div class="btn_wrap">
+                            <a href="/BetterDays" class="btn-more-red-round">
+                                <span>더 알아보기</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 홍보 제품 -->
+
+
+
+
+
+
+
+            <section class="products_wrap">
+                <div class="container_wrap">
+                    <div class="txt_wrap">
+                        <h2>켈로그 주력 상품들</h2>
+                        <a href="/BrandAndProducts" class="btn_more" title="켈로그 제품 페이지 새창 열림">
+                            <em>더보기</em>
+                        </a>
+                    </div>
+                    <div class="similar_wrap">
+                        <ul class="similar_product_list">
+                            <li class="similar_item">
+                                <a href="/BrandAndProductDetail?ProductSequence=1">
+                                    <img src="/Images/Main/img_product_cf.png" alt="콘푸로스트">
+                                    <strong>콘푸로스트</strong>
+                                    <p>콘푸로스트는 자연에서 온 곡물 가공을 최소화하여 건강하게 구웠습니다</p>
+                                </a>
+                            </li>
+                            <li class="similar_item">
+                                <a href="/BrandAndProductDetail?ProductSequence=8">
+                                    <img src="/Images/Main/img_product_cco.png" alt="첵스초코 오리지널">
+                                    <strong>첵스초코</strong>
+                                    <p>첵스초코는 우유와 만나면 진한 초코 우유로 변하는 초코 시리얼입니다</p>
+                                </a>
+                            </li>
+                            <li class="similar_item">
+                                <a href="/BrandAndProductDetail?ProductSequence=16">
+                                    <img src="/Images/Main/img_product_rg.png" alt="리얼 그래놀라">
+                                    <strong>리얼 그래놀라</strong>
+                                    <p>리얼 그래놀라는 5가지 진짜 과일과 건강한 그래놀라를 듬뿍 담았습니다</p>
+                                </a>
+                            </li>
+                            <li class="similar_item">
+                                <a href="/BrandAndProductDetail?ProductSequence=20">
+                                    <img src="/Images/Main/img_product_protein_granola.png?ver=220225" alt="프로틴 그래놀라">
+                                    <strong>프로틴 그래놀라</strong>
+                                    <p>그래놀라에 100% 국내산 검정약콩으로 고소함과 단백질을 더했습니다</p>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 레시피 영역 -->
+
+
+
+
+
+
+
+            <section class="recipes-wrap">
+                <div class="container_wrap">
+                    <h2><img src="/Images/Main/img_recipes_title.png" alt="kellogg amazing kreations"></h2>
+                    <a href="/Recipes" class="btn_more" title="켈로그 제품 페이지 새창 열림">
+                        <em>더보기</em>
+                        <span class="more_bg"></span>
+                    </a>
+                    <div class="recipes-swiper">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+
+                                <div class="swiper-slide">
+                                    <a href="/RecipesDetail?RecipeSequence=16" target="_blank"
+                                        title="첵스초코 유령 브라우니 페이지로 이동">
+                                        <img src="/Images/Main/img_recipes_ccgb.png" alt="첵스초코 유령 브라우니">
+                                        <p>첵스초코 유령 브라우니</p>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="/RecipesDetail?RecipeSequence=11" target="_blank" title="그릭모모 페이지로 이동">
+                                        <img src="/Images/Main/img_recipes_gm.png" alt="그릭모모">
+                                        <p>그릭모모</p>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="/RecipesDetail?RecipeSequence=15" target="_blank"
+                                        title="에너지바K 곶감말이 페이지로 이동">
+                                        <img src="/Images/Main/img_recipes_edpr.png" alt="에너지바K 곶감말이">
+                                        <p>에너지바K 곶감말이</p>
+                                    </a>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
+
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next"><em class="blind">다음콘텐츠이동</em></div>
+                        <div class="swiper-button-prev"><em class="blind">이전콘텐츠이동</em></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SNS 영역 -->
+
+
+
+
+
+
+
+            <section class="sns_wrap">
+                <div class="container_wrap">
+
+                    <div class="link_area">
+                        <div>
+                            <img src="/Images/Main/img_social-channers_title.png" alt="kelloggs our social chnnels" />
+                        </div>
+                        <ul>
+                            <li>
+                                <a href="https://www.instagram.com/p/CbyksDhhVC3/"
+                                    onclick="gtag('event', '버튼 클릭 이벤트', {'event_category' : '인스타그램 유입 정보', 'event_label' : '월드비전 MOU'});"
+                                    target="_blank" class="instagram"><img
+                                        src="/Images/Main/img_Instagram_1.jpg?ver=20220523" alt="월드비전 MOU"></a>
+                                <div class="picture-frame small">
+                                    <i></i><i></i><i></i><i></i><i></i>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/p/CcoesPhhYHS/"
+                                    onclick="gtag('event', '버튼 클릭 이벤트', {'event_category' : '인스타그램 유입 정보', 'event_label' : '고 그린 (2차 컨텐츠)'});"
+                                    target="_blank" class="instagram"><img
+                                        src="/Images/Main/img_Instagram_2.jpg?ver=20220523" alt="고 그린 (2차 컨텐츠)"></a>
+                                <div class="picture-frame small">
+                                    <i></i><i></i><i></i><i></i><i></i>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/p/Cdkf-wlBfkE/"
+                                    onclick="gtag('event', '버튼 클릭 이벤트', {'event_category' : '인스타그램 유입 정보', 'event_label' : '코코팝스 뷰티컷'});"
+                                    target="_blank" class="instagram"><img
+                                        src="/Images/Main/img_Instagram_3.jpg?ver=20220523" alt="코코팝스 뷰티컷"></a>
+                                <div class="picture-frame small">
+                                    <i></i><i></i><i></i><i></i><i></i>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/p/Cdfaf0uBCyh/"
+                                    onclick="gtag('event', '버튼 클릭 이벤트', {'event_category' : '인스타그램 유입 정보', 'event_label' : '등산 뷰티컷'});"
+                                    target="_blank" class="instagram"><img
+                                        src="/Images/Main/img_Instagram_4.jpg?ver=20220523" alt="등산 뷰티컷"></a>
+                                <div class="picture-frame small">
+                                    <i></i><i></i><i></i><i></i><i></i>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/p/CdIO-OdBJry/"
+                                    onclick="gtag('event', '버튼 클릭 이벤트', {'event_category' : '인스타그램 유입 정보', 'event_label' : '어린이날 뷰티컷'});"
+                                    target="_blank" class="instagram"><img
+                                        src="/Images/Main/img_Instagram_5.jpg?ver=20220523" alt="어린이날 뷰티컷"></a>
+                                <div class="picture-frame small">
+                                    <i></i><i></i><i></i><i></i><i></i>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/p/Cc7R1FbheJd/"
+                                    onclick="gtag('event', '버튼 클릭 이벤트', {'event_category' : '인스타그램 유입 정보', 'event_label' : '에코백 인플루언서'});"
+                                    target="_blank" class="instagram"><img
+                                        src="/Images/Main/img_Instagram_6.jpg?ver=20220523" alt="에코백 인플루언서"></a>
+                                <div class="picture-frame small">
+                                    <i></i><i></i><i></i><i></i><i></i>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="link_area">
+                        <div><a href="https://youtu.be/aZ6Z3_YNr4A"
+                                onclick="gtag('event', '버튼 클릭 이벤트', {'event_category' : '유튜브 유입 정보', 'event_label' : '프로틴 리정 광고 본편'});"
+                                target="_blank" title="유투브 채널 새창으로 이동" class="youtube"><img
+                                    src="/Images/Main/img_youtube.jpg?ver=20220523" alt="프로틴 리정 광고 본편"
+                                    height="100%"></a></div>
+                        <ul>
+                            <li>
+                                <a href="https://blog.naver.com/kelloggs_kr/222624568325"
+                                    onclick="gtag('event', '버튼 클릭 이벤트', {'event_category' : '네이버 블로그 유입 정보', 'event_label' : '시리얼 리필스테이션 둘러보기'});"
+                                    target="_blank" class="naver_blog"><img
+                                        src="/Images/Main/img_naver_blog_1.jpg?ver=20220523" alt="시리얼 리필스테이션 둘러보기"></a>
+                                <div class="picture-frame small">
+                                    <i></i><i></i><i></i><i></i><i></i>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="https://blog.naver.com/kelloggs_kr/222679950473"
+                                    onclick="gtag('event', '버튼 클릭 이벤트', {'event_category' : '네이버 블로그 유입 정보', 'event_label' : '그래놀라 머핀 레시피'});"
+                                    target="_blank" class="naver_blog"><img
+                                        src="/Images/Main/img_naver_blog_2.png?ver=20220523" alt="그래놀라 머핀 레시피"></a>
+                                <div class="picture-frame small">
+                                    <i></i><i></i><i></i><i></i><i></i>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="https://blog.naver.com/kelloggs_kr/222727011011"
+                                    onclick="gtag('event', '버튼 클릭 이벤트', {'event_category' : '네이버 블로그 유입 정보', 'event_label' : '디지털 피트니스'});"
+                                    target="_blank" class="naver_blog"><img
+                                        src="/Images/Main/img_naver_blog_3.png?ver=20220523" alt="디지털 피트니스"></a>
+                                <div class="picture-frame small">
+                                    <i></i><i></i><i></i><i></i><i></i>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="https://blog.naver.com/kelloggs_kr/222668645720"
+                                    onclick="gtag('event', '버튼 클릭 이벤트', {'event_category' : '네이버 블로그 유입 정보', 'event_label' : '10만 인분 기부'});"
+                                    target="_blank" class="naver_blog"><img
+                                        src="/Images/Main/img_naver_blog_4.png?ver=20220523" alt="10만 인분 기부"></a>
+                                <div class="picture-frame small">
+                                    <i></i><i></i><i></i><i></i><i></i>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 영양 페이지 링크 영역 -->
+
+
+
+
+
+
+
+            <section class="nutrition_wrap">
+                <ul>
+                    <li>
+                        <div class="container_wrap">
+                            <div class="text_wrap">
+                                <h2>시리얼의 영양</h2>
+                                <p>한 줌의 곡물이 맛있는 식사가 되고, 농장에서 여러분의 식탁으로 전달되기까지 맛있고
+                                    건강한 시리얼 한 스푼을 위해 켈로그는 항상 최선의 노력을 다하고 있습니다.</p>
+                                <div class="btn_wrap">
+                                    <a href="/CerealAndNutrition" target="_self" class="btn-more-red-round">
+                                        <span>더 알아보기</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="container_wrap">
+                            <div class="text_wrap">
+                                <h2>시리얼의 혁신</h2>
+                                <p>Kellogg 세계 최초로 아침 식사용 시리얼을 개발한 후로 지난 100년 동안 시리얼은 더 맛있고
+                                    건강하게 진화하고 있습니다.</p>
+                                <div class="btn_wrap">
+                                    <a href="/CerealInnovation" target="_self" class="btn-more-red-round">
+                                        <span>더 알아보기</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+        </div>
+        <!--E: container -->
+
+        <script src="/Script/Index/Index.js?ver=211229" charset="utf-8"></script>
+
+
+
+
+
+
+
+
+        <footer id="footer">
+            <a href="#top" class="btn_type_3 btn_top"><em class="blind">상단으로 이동</em></a>
+            <div class="info_detail inner_wrap">
+                <div class="widget_list">
+                    <a href="/ContactUs">CONTACT US</a>
+                    <i class="bar"></i>
+                    <a href="/SiteMap">SITE MAP</a>
+                </div>
+                <address>
+                    안성공장 | 17567 경기도 안성시 공단2로 29 (경기도 안성시 신소현동 142번지)<br>
+                    서울본사 | 06235 서울시 강남구 테헤란로 134 15층 (서울 강남구 역삼동 735-3 포스코타워 역삼 15층)
+                </address>
+            </div>
+            <div class="info_base inner_wrap">
+                <div class="logo">
+                    <a href="/Index"><img src="/Images/Common/logo_white.png" alt="kellogg's"></a>
+                </div>
+                <div class="copyright">&copy; 2021 KELLOGG Co Ltd ALL RIGHT RESERVED.</div>
+                <div class="sns">
+                    <a href="https://www.youtube.com/channel/UC0Ab7cfFW5CZ6AUbQvkChVw"
+                        onclick="gtag('event', '버튼 클릭 이벤트', {'event_category' : '유튜브 유입 정보', 'event_label' : '웹 푸터 유튜브 유입 정보'});"
+                        title="유투브 채널 새창으로 이동" target="_blank" class="youtube">
+                        <em class="blind">유튜브</em>
+                    </a>
+                    <a href="https://www.instagram.com/kelloggs_korea/"
+                        onclick="gtag('event', '버튼 클릭 이벤트', {'event_category' : '인스타그램 유입 정보', 'event_label' : '웹 푸터 인스타그램 유입 정보'});"
+                        title="인스타그램 새창으로 이동" target="_blank" class="instagram">
+                        <em class="blind">인스타그램</em>
+                    </a>
+                    <a href="https://blog.naver.com/kelloggs_kr"
+                        onclick="gtag('event', '버튼 클릭 이벤트', {'event_category' : '네이버 블로그 유입 정보', 'event_label' : '웹 푸터 네이버 블로그 유입 정보'});"
+                        title="네이버 블로그 새창으로 이동" target="_blank" class="naver_blog">
+                        <em class="blind">네이버 블로그</em>
+                    </a>
+                </div>
+                <div class="language"></div>
+
+                <div class="btn_info_open">
+                    <button type="button" class="btn btn_type_4 foot_open">
+                        <i></i>
+                        <i></i>
+                    </button>
+                </div>
+            </div>
+            <!--E: inner_wrap  -->
+        </footer>
+        <!--E: footer -->
+
+
+
+
+        <div class="floating-widget">
+            <a href="https://pages.coupang.com/f/s2148" target="_blank" aria-label="켈로그샵 바로가기" class="shopwidget"></a>
+        </div>
+
+
+
+
+
+
+
+        <form id="pageLoadingForm" method="post" action="" style="display: none;">
+            <input type="hidden" name="" value="" />
+        </form>
+
+    </div>
+
+</body>
+
+
+<script type="application/javascript">
+    $(function () {
+        $(document).ajaxSend(function (e, xhr, options) {
+            const _csrfHeaderName = '';
+            const _csrfToken = '';
+            xhr.setRequestHeader(_csrfHeaderName, _csrfToken);
+        });
+    });
+</script>
+
+</html>
