@@ -33,7 +33,7 @@ deco2.addEventListener("mouseover", function (event) {
     see2.style.backgroundColor = "rgb(186, 12, 47)";
 }, false);
 
-deco1.addEventListener("mouseout", function (event) {
+dwhead.addEventListener("mouseout", function (event) {
     deco1.style.textDecoration = "none";
     uphead.style.height = "53px";
     dwhead.style.padding = "0 0 0 0";
@@ -46,7 +46,7 @@ deco1.addEventListener("mouseout", function (event) {
     see2.style.backgroundColor = "rgb(186, 12, 47)";
 }, false);
 
-deco2.addEventListener("mouseout", function (event) {
+dwhead.addEventListener("mouseout", function (event) {
     deco2.style.textDecoration = "none";
     uphead.style.height = "53px";
     dwhead.style.padding = "0 0 0 0";

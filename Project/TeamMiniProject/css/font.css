@@ -1,0 +1,91 @@
+/* normal */
+@font-face {
+	font-family: KelloggsSans-Light;
+	src: url(../font/KelloggsSans-Light.otf) format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+@font-face {
+	font-family: KelloggsSans-Regular;
+	src: url(../font/KelloggsSans-Regular.otf) format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: KelloggsSans-Medium;
+	src: url(../font/KelloggsSans-Medium.otf) format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+	font-family: KelloggsSans-Bold;
+	src: url(../font/KelloggsSans-Bold.otf) format('truetype');
+	font-weight:700;
+	font-style:normal;
+}
+@font-face {
+	font-family: KelloggsSans-Regular;
+	src: url(../font/KelloggsSans-Regular.otf) format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Italic */
+@font-face {
+	font-family: KelloggsSans-LightItalic;
+	src: url(../font/KelloggsSans-LightItalic.otf) format('truetype');
+	font-weight: 300;
+	font-style: italic;
+}
+@font-face {
+	font-family: KelloggsSans-MediumItalic;
+	src: url(../font/KelloggsSans-MediumItalic.otf) format('truetype');
+	font-weight: 500;
+	font-style: italic;
+}
+@font-face {
+	font-family: KelloggsSans-BoldItalic;
+	src: url(../font/KelloggsSans-BoldItalic.otf) format('truetype');
+	font-weight: 700;
+	font-style: italic;
+}
+
+/* KelloggsSans-Italic */
+
+/* NotoSansKR */
+@font-face {
+	font-family: NotoSansKR-Thin;
+	src: url(../font/NotoSansKR-Thin.otf) format('truetype');
+	font-weight: 100;
+	font-style: normal;
+}
+@font-face {
+	font-family: NotoSansKR-Black;
+	src: url(../font/NotoSansKR-Black.otf) format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+@font-face {
+	font-family: NotoSansKR-Bold;
+	src: url(../font/NotoSansKR-Bold.otf) format('truetype');
+	font-weight: 700;
+	font-style: normal;
+}
+@font-face {
+	font-family: NotoSansKR-Light;
+	src: url(../font/NotoSansKR-Light.otf) format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+@font-face {
+	font-family: NotoSansKR-Medium;
+	src: url(../font/NotoSansKR-Medium.otf) format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+	font-family: NotoSansKR-Regular;
+	src: url(../font/NotoSansKR-Regular.otf) format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
