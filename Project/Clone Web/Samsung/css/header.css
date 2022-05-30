@@ -1,0 +1,78 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    font-family: 'samsungOne', Arial, sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+#logo-img{
+    width: 110px;
+    top: 20px;
+    left: 20px;
+}
+
+#logo {
+    width: auto;
+    position: relative;
+    float: left;
+}
+
+#main-menu {
+    display: flex;
+    position: relative;
+    flex-wrap: row;
+    float: left;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#side-menu {
+    display: flex;
+    position: relative;
+    flex-wrap: row;
+    float: left;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#icon-menu {
+    display: flex;
+    position: relative;
+    flex-wrap: row;
+    float: left;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-menu-inner {
+    margin: 0 5px;
+}
+
+.side-menu-inner{
+    margin: 0 5px;
+}
+
+.icon-menu-inner {
+    width: 25px;
+    margin: 0px 5px;
+}
+
+.li-arrow {
+    width: 25px;
+}
+
+.first-drop-ul {
+    display: none;
+}

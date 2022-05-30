@@ -1,0 +1,9 @@
+@font-face {
+    font-family: samsungOne;
+    src: url(../font/SamsungOne-400.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: samsungOne;
+    src: url(../font/SamsungOne-700.ttf) format('truetype');
+}

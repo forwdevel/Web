@@ -213,6 +213,10 @@ img {
     width: calc(40.5% - 5px);
 }
 
+#medias > * {
+    flex: 0 0 auto;
+}
+
 #medias .links1{
     margin-top: 0;
     display: flex;
@@ -281,7 +285,6 @@ img {
 
 #medias {
     position: relative;
-    width: 100%;
     max-width: 1180px;
     margin: 0 auto;
     padding: 110px 0;
@@ -317,13 +320,23 @@ img {
     flex-flow: row;
     flex-wrap: wrap;
     justify-content: flex-start;
+    flex: 0 0 auto;
+}
+
+.links {
+    width: 100%;
 }
 
 .ex-link {
     position: relative;
     display: flex;
     flex-flow: row;
-    flex-wrap: wrap;
-    width: 100%;
+    flex-wrap: wrap-reverse;
     justify-content: space-between;
+    width: 100%;
+}
+
+.breaker-maxwidth {
+    display: block;
+    width: 100%;
 }
