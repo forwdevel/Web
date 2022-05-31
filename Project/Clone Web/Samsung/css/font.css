@@ -1,9 +1,19 @@
 @font-face {
-    font-family: samsungOne;
+    font-family: samsungOne-400;
     src: url(../font/SamsungOne-400.ttf) format('truetype');
 }
 
 @font-face {
-    font-family: samsungOne;
+    font-family: samsungOne-700;
     src: url(../font/SamsungOne-700.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: Sharp-regular;
+    src: url(../font/SamsungSharpSans-regular.TTF) format('truetype');
+}
+
+@font-face {
+    font-family: Sharp-bold;
+    src: url(../font/SamsungSharpSans-Bold.ttf) format('truetype');
 }

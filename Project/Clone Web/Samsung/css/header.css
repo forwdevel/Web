@@ -5,20 +5,44 @@
 
 body {
     width: 100%;
-    font-family: 'samsungOne', Arial, sans-serif;
+    font-family: 'samsungOne-700', Arial, sans-serif;
+    font-size:  14px;
+    white-space: nowrap;
 }
 
 li {
     list-style: none;
 }
 
+header {
+    width: 100%;
+    margin: 30px auto 30px auto;
+    display: flex;
+    position: relative;
+    float: left;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+}
+
+#header-case {
+    display: flex;
+    width: 92%;
+    margin: auto;
+    float: left;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+}
+
 a {
     color: black;
     text-decoration: none;
+    padding: 2px 2px;
 }
 
 #logo-img{
-    width: 110px;
+    width: 100px;
     top: 20px;
     left: 20px;
 }
@@ -27,24 +51,25 @@ a {
     width: auto;
     position: relative;
     float: left;
+    margin-right: 100px;
 }
 
 #main-menu {
     display: flex;
     position: relative;
-    flex-wrap: row;
     float: left;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
+    margin-right: 200px;
 }
 
 #side-menu {
     display: flex;
     position: relative;
-    flex-wrap: row;
     float: left;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
+    margin-right: 36px;
 }
 
 #icon-menu {
@@ -53,26 +78,89 @@ a {
     flex-wrap: row;
     float: left;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .main-menu-inner {
+    width: auto;
     margin: 0 5px;
 }
 
 .side-menu-inner{
+    width: auto;
     margin: 0 5px;
 }
 
 .icon-menu-inner {
     width: 25px;
-    margin: 0px 5px;
+    margin: 0px 8px;   
 }
 
 .li-arrow {
-    width: 25px;
+    width: 20px;
+    height: 20px;
 }
 
 .first-drop-ul {
     display: none;
+}
+
+.anchor:hover {
+    border-radius: 20px 20px;
+    background-color: black;
+    color: white;
+}
+
+.anchor:hover > li {
+    background-color: white;
+    color: black;
+}
+
+.first-drop-li {
+    padding: 10px 0;
+    font-family: 'samsungOne-400';
+}
+
+#header-fixed {
+    width: 100%;
+    margin: 30px auto 0px auto;
+    top: 50px;
+    display: flex;
+    position: relative;
+    float: left;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+    position: fixed;
+}
+
+#nav-case {
+    border-top: 1px solid rgb(218, 218, 218);
+    display: flex;
+    width: 92.5%;
+    margin: auto;
+    padding:  18px 0;
+    float: left;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+}
+
+#left-nav {
+    margin-left: 30px;
+    font-size: 20px;
+    font-family: 'Sharp-bold';
+}
+
+#right-nav {
+    display: flex;
+    float: left;
+    flex-direction: row;
+    right: 0;
+    margin-right: 30px;
+}
+
+.right-nav-li {
+    margin: 0 0 0 30px;
+    font-size: 12px;
 }
