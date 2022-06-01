@@ -7,6 +7,33 @@
       width: 95%;
 }
 
+:root {
+      --swiper-navigation-size:68px !important; 
+}
+
+.swiper-button-next {
+      background-image: url(../img/sec/swiper-arrow.png);
+      background-repeat: no-repeat;
+      background-size: 100% auto;
+      background-position: center;
+}
+
+.swiper-button-next::after {
+      display: none;
+}
+
+.swiper-button-prev {
+      background-image: url(../img/sec/swiper-arrow.png);
+      transform: rotate(180deg);
+      background-repeat: no-repeat;
+      background-size: 100% auto;
+      background-position: center;
+}
+
+.swiper-button-prev::after {
+      display: none;
+}
+
 .swiper-slide {
       text-align: center;
       font-size: 18px;
@@ -50,11 +77,13 @@
 .swiper h2 {
       position: absolute;
       font-size: 48px;
+      text-align: left;
       font-family: 'Sharp-bold';
 }
 
 .swiper .slide-contents {
       position: absolute;
+      text-align: left;
       font-family:'samsungOne-400';
 }
 
@@ -73,6 +102,8 @@
 
 .slide-under-btn {
       font-size: 14px;
+      border-bottom: 3px black solid;
+      padding: 1px;
 }
 
 .slide-common-btn {
@@ -86,11 +117,96 @@
 #slide1-btn1 {
       top: 80px;
       left: 0px;
-      border-bottom: 3px black solid;
-      padding: 1px;
 }
 
 #slide1-btn2 {
       top: 72px;
       left: 120px;
+}
+
+#slide2-head {
+      top: 160px;
+      line-height: 120%;
+}
+
+#slide2-content {
+      top: 295px;
+}
+
+.center-line-deco {
+      text-decoration: line-through;
+}
+
+#slide2-btn {
+      top: 170px;
+      left: 0;
+}
+
+#slide3-date {
+      top: 150px;
+}
+
+#slide3-head {
+      top: 200px;
+}
+
+#slide3-content {
+      top: 340px;
+}
+
+#slide3-btn {
+      top: 100px;
+      left: 0;
+}
+
+#slide4-head {
+      top: 160px;
+}
+
+#slide4-btn{
+      top: 60px;
+      left: 0;
+}
+
+#slide5-head {
+      top: 180px;
+}
+
+#slide5-content {
+      top: 320px;
+}
+
+#slide5-btn1 {
+      top: 90px;
+      left: 0;
+}
+
+#slide5-btn2 {
+      top: 80px;
+      left: 90px;
+}
+
+#slide6-head {
+      top: 220px;
+      color: white;
+}
+
+#slide6-btn1 {
+      top: 60px;
+      left: 0;
+      color: white;
+      font-size: 14px;
+      border-bottom-color: white;
+      border-bottom-style: solid;
+      padding: 1px;
+}
+
+#slide6-btn2 {
+      top: 50px;
+      left: 90px;
+      color: black;
+      font-size: 14px;
+      padding: 10px 22px 12px 22px;
+      border-radius: 20px;
+      background-color: white;
 }
