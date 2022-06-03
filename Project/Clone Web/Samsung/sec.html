@@ -318,22 +318,22 @@
           <!-- Make six bullets -->
           <div id="top-bullet-container">
             <div class="bullet-background">
-              <div class="bullet-active"></div>
+              <div class="bullet-inner"></div>
             </div>
             <div class="bullet-background">
-              <div class="none-active"></div>
+              <div class="bullet-inner"></div>
             </div>
             <div class="bullet-background">
-              <div class="none-active"></div>
+              <div class="bullet-inner"></div>
             </div>
             <div class="bullet-background">
-              <div class="none-active"></div>
+              <div class="bullet-inner"></div>
             </div>
             <div class="bullet-background">
-              <div class="none-active"></div>
+              <div class="bullet-inner"></div>
             </div>
             <div class="bullet-background">
-              <div class="none-active"></div>
+              <div class="bullet-inner"></div>
             </div>
           </div>
 
@@ -368,19 +368,36 @@
 
     <!-- Initialize Swiper -->
     <script>
+      // top-swiper is perpectly completed
       var btn = document.getElementById("swiper-play-and-pause");
-      var progress = document.getElementById("swiper-progress");
-      var progressInner = document.getElementById("swiper-progress-inner");
+      var swiperNextBtn = document.getElementsByClassName("swiper-button-next");
+      var swiperPrevBtn = document.getElementsByClassName("swiper-button-prev");
+
       var isPlay = true;
+      var body = document.querySelector("body");
+
+      var bulletBackground =
+        document.getElementsByClassName("bullet-background");
+      var bulletInner = document.getElementsByClassName("bullet-inner");
+
+      var width = 1; // it is shared. slide will be changed, if it is reached by 100.
+
+      var id = 0;
+
+      // idea
+
+      // swiper slide change will be implement using by swiper.slidenext;
+      // activeIndex = 1, when reached last slide
 
       var swiper = new Swiper(".top-swiper", {
         slidesPerView: 1,
         spaceBetween: 30,
         loop: true,
 
-        autoplay: {
-          delay: 5000, // it is work
-        },
+        // // swiper autoplay was removed
+        // autoplay: {
+        //   delay: 5000, // it is work
+        // },
         navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
@@ -388,28 +405,118 @@
       });
 
       function playing() {
-        // Not given bullets,
-        // Make self bullets
-
-        var elem = document.getElementsByClassName(
-          "swiper-pagination-bullet-active"
-        );
-        var id = 0;
-        var width = 1;
         if (isPlay) {
-          console.log("stop entering");
           isPlay = false;
           btn.style.backgroundImage = "url(img/sec/pause.png)";
-          swiper.autoplay.stop();
+          clearInterval(id);
         } else {
-          console.log("start entering");
           isPlay = true;
+          console.log("isplay: " + isPlay);
           btn.style.backgroundImage = "url(img/sec/play.png)";
-          swiper.autoplay.start();
+          move();
+        }
+      }
+
+      // worked
+      function move() {
+        if (isPlay) {
+          id = setInterval(frame, 40);
+          function frame() {
+            if (isPlay) {
+              if (width == 100) {
+                // initialize
+                width = 1;
+                // go to next slide
+                swiper.slideNext();
+                // 2 <= activeIndex <= 6
+                if (swiper.activeIndex >= 2 && swiper.activeIndex <= 6) {
+                  bulletInner[swiper.activeIndex - 2].style.width = "0%";
+                  bulletBackground[swiper.activeIndex - 2].style.opacity =
+                    "0.4";
+                }
+                // activeIndex == 1
+                else {
+                  // last slide bullet will be initailized if it is looped
+                  bulletInner[5].style.width = "0%";
+                  bulletBackground[5].style.opacity = "0.4";
+                  swiper.activeIndex = 1;
+                }
+              } else {
+                width++;
+                if (swiper.activeIndex == 0) {
+                  // 6th Slide
+                  bulletInner[5].style.width = width + "%";
+                  bulletBackground[5].style.opacity = "1";
+                } else {
+                  bulletInner[swiper.activeIndex - 1].style.width = width + "%";
+                  bulletBackground[swiper.activeIndex - 1].style.opacity = "1";
+                }
+              }
+            }
+          }
         }
       }
 
       btn.addEventListener("click", playing);
+      body.addEventListener("mouseenter", move(isPlay));
+
+      swiperNextBtn[0].addEventListener("click", (event) => {
+        clearInterval(id);
+
+        // initialize
+        width = 1;
+        // 2 <= activeIndex <= 6
+        if (swiper.activeIndex >= 2 && swiper.activeIndex <= 6) {
+          bulletInner[swiper.activeIndex - 2].style.width = "0%";
+          bulletBackground[swiper.activeIndex - 2].style.opacity = "0.4";
+        }
+        // activeIndex == 1
+        else {
+          // last slide bullet will be initailized if it is looped
+          bulletInner[5].style.width = "0%";
+          bulletBackground[5].style.opacity = "0.4";
+          swiper.activeIndex = 1;
+        }
+
+        move(isPlay);
+      });
+      swiperPrevBtn[0].addEventListener("click", (event) => {
+        console.log("prev event start");
+
+        clearInterval(id);
+
+        // initialize
+        width = 1;
+
+        if (swiper.activeIndex == 1) {
+          bulletInner[swiper.activeIndex].style.width = "0%";
+          bulletBackground[swiper.activeIndex].style.opacity = "0.4";
+          console.log(swiper.activeIndex);
+        } else if (swiper.activeIndex == 2) {
+          bulletInner[swiper.activeIndex].style.width = "0%";
+          bulletBackground[swiper.activeIndex].style.opacity = "0.4";
+          console.log(swiper.activeIndex);
+        } else if (swiper.activeIndex == 3) {
+          bulletInner[swiper.activeIndex].style.width = "0%";
+          bulletBackground[swiper.activeIndex].style.opacity = "0.4";
+          console.log(swiper.activeIndex);
+        } else if (swiper.activeIndex == 4) {
+          bulletInner[swiper.activeIndex].style.width = "0%";
+          bulletBackground[swiper.activeIndex].style.opacity = "0.4";
+          console.log(swiper.activeIndex);
+        } else if (swiper.activeIndex == 5) {
+          bulletInner[swiper.activeIndex].style.width = "0%";
+          bulletBackground[swiper.activeIndex].style.opacity = "0.4";
+          console.log(swiper.activeIndex);
+        } else {
+          // swiper.nextIndex = 0 => 6th Slide
+          bulletInner[0].style.width = "0%";
+          bulletBackground[0].style.opacity = "0.4";
+          console.log(swiper.activeIndex);
+        }
+
+        move(isPlay);
+      });
     </script>
   </body>
 </html>
