@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      /* Background */
+      #myProgress {
+        width: 100%;
+        background-color: grey;
+      }
+
+      /* progress bar */
+      #myBar {
+        width: 1%;
+        height: 10px;
+        background-color: black;
+      }
+
+      #play-and-pause {
+        width: 96px;
+        height: 96px;
+        position: relative;
+        background: url("icons8-play-96.png") no-repeat center;
+        background-size: 96px;
+        border: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="myProgress">
+      <div id="myBar"></div>
+    </div>
+
+    <button id="play-and-pause"></button>
+
+    <script>
+      var outer = document.getElementById("myProgress");
+      var elem = document.getElementById("myBar");
+      var btn = document.getElementById("play-and-pause");
+      var body = document.querySelector("body");
+      var isPlay = true;
+      var width = 1;
+
+      function clicked() {
+        if (isPlay) {
+          // confrim log
+          console.log("play => pause");
+
+          // change btn
+          isPlay = false;
+          btn.style.background = 'url("icons8-pause-96.png") no-repeat center';
+        } else {
+          // confrim log
+          console.log("pause => play");
+
+          // change btn
+          isPlay = true;
+          btn.style.background = 'url("icons8-play-96.png") no-repeat center';
+          // callback
+          move();
+        }
+      }
+
+      function move() {
+        console.log("move is worked");
+        var id = 0;
+
+        if (isPlay) {
+          id = setInterval(frame, 100);
+          function frame() {
+            if (isPlay) {
+              console.log("frame is worked");
+              console.log("isPlay = " + isPlay);
+              if (width >= 100) {
+                clearInterval(id);
+              } else {
+                width++;
+                elem.style.width = width + "%";
+              }
+            } else {
+              clearInterval(id);
+            }
+          }
+        }
+      }
+
+      // If btn is clicked, call 'clicked func'
+      btn.addEventListener("click", clicked);
+      body.addEventListener("mouseenter", move);
+    </script>
+  </body>
+</html>
