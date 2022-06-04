@@ -213,7 +213,6 @@
 
 /* Custom Bullets */
 
-/* not current slide and inner bar*/
 .bullet-background {
   background-color: rgb(104, 104, 104);
   height: 3px;
@@ -224,12 +223,18 @@
   opacity: 0.4;
 }
 
-/* current slide */
 .bullet-inner {
   background-color: rgb(0, 0, 0);
   width: 1%;
   height: 3px;
   border-radius: 2px;
+}
+
+.bullet-label {
+  position: relative;
+  top: -22px;
+  text-align: center;
+  display: none;
 }
 
 #swiper-play-and-pause {

@@ -319,21 +319,27 @@
           <div id="top-bullet-container">
             <div class="bullet-background">
               <div class="bullet-inner"></div>
+              <div class="bullet-label">Memorial Day</div>
             </div>
             <div class="bullet-background">
               <div class="bullet-inner"></div>
+              <div class="bullet-label">S22 Ultra</div>
             </div>
             <div class="bullet-background">
               <div class="bullet-inner"></div>
+              <div class="bullet-label">Z Fold3 5G</div>
             </div>
             <div class="bullet-background">
               <div class="bullet-inner"></div>
+              <div class="bullet-label">Freestyle</div>
             </div>
             <div class="bullet-background">
               <div class="bullet-inner"></div>
+              <div class="bullet-label">Reward</div>
             </div>
             <div class="bullet-background">
               <div class="bullet-inner"></div>
+              <div class="bullet-label" style="color: white">#Youmake</div>
             </div>
           </div>
 
@@ -379,6 +385,7 @@
       var bulletBackground =
         document.getElementsByClassName("bullet-background");
       var bulletInner = document.getElementsByClassName("bullet-inner");
+      var bulletLabel = document.getElementsByClassName("bullet-label");
 
       var width = 1; // it is shared. slide will be changed, if it is reached by 100.
 
@@ -417,7 +424,7 @@
         }
       }
 
-      // worked
+      // move()
       function move() {
         if (isPlay) {
           id = setInterval(frame, 40);
@@ -433,12 +440,14 @@
                   bulletInner[swiper.activeIndex - 2].style.width = "0%";
                   bulletBackground[swiper.activeIndex - 2].style.opacity =
                     "0.4";
+                  bulletLabel[swiper.activeIndex - 2].style.display = "none";
                 }
                 // activeIndex == 1
                 else {
                   // last slide bullet will be initailized if it is looped
                   bulletInner[5].style.width = "0%";
                   bulletBackground[5].style.opacity = "0.4";
+                  bulletLabel[5].style.display = "none";
                   swiper.activeIndex = 1;
                 }
               } else {
@@ -447,9 +456,11 @@
                   // 6th Slide
                   bulletInner[5].style.width = width + "%";
                   bulletBackground[5].style.opacity = "1";
+                  bulletLabel[5].style.display = "block";
                 } else {
                   bulletInner[swiper.activeIndex - 1].style.width = width + "%";
                   bulletBackground[swiper.activeIndex - 1].style.opacity = "1";
+                  bulletLabel[swiper.activeIndex - 1].style.display = "block";
                 }
               }
             }
@@ -460,6 +471,167 @@
       btn.addEventListener("click", playing);
       body.addEventListener("mouseenter", move(isPlay));
 
+      // --------- Bullet Click Events ---------
+
+      // 1st bullet
+      bulletBackground[0].addEventListener("click", (event) => {
+        console.log(swiper.activeIndex);
+        // It doesn't work if it has same index with active slide
+        if (swiper.activeIndex != 1) {
+          clearInterval(id);
+
+          // initialize
+          width = 1;
+
+          if (swiper.activeIndex != 0) {
+            bulletInner[swiper.activeIndex - 1].style.width = "0%";
+            bulletBackground[swiper.activeIndex - 1].style.opacity = "0.4";
+            bulletLabel[swiper.activeIndex - 1].style.display = "none";
+          } else {
+            bulletInner[5].style.width = "0%";
+            bulletBackground[5].style.opacity = "0.4";
+            bulletLabel[5].style.display = "none";
+          }
+
+          swiper.activeIndex = 1;
+          swiper.slideTo(1, 0, false);
+
+          move(isPlay);
+        }
+      });
+
+      // 2nd bullet
+      bulletBackground[1].addEventListener("click", (event) => {
+        // It doesn't work if it has same index with active slide
+        if (swiper.activeIndex != 2) {
+          clearInterval(id);
+
+          // initialize
+          width = 1;
+
+          if (swiper.activeIndex != 0) {
+            bulletInner[swiper.activeIndex - 1].style.width = "0%";
+            bulletBackground[swiper.activeIndex - 1].style.opacity = "0.4";
+            bulletLabel[swiper.activeIndex - 1].style.display = "none";
+          } else {
+            bulletInner[5].style.width = "0%";
+            bulletBackground[5].style.opacity = "0.4";
+            bulletLabel[5].style.display = "none";
+          }
+
+          swiper.activeIndex = 2;
+          swiper.slideTo(2, 0, false);
+
+          move(isPlay);
+        }
+      });
+
+      // 3rd bullet
+      bulletBackground[2].addEventListener("click", (event) => {
+        // It doesn't work if it has same index with active slide
+        if (swiper.activeIndex != 3) {
+          clearInterval(id);
+
+          // initialize
+          width = 1;
+
+          if (swiper.activeIndex != 0) {
+            bulletInner[swiper.activeIndex - 1].style.width = "0%";
+            bulletBackground[swiper.activeIndex - 1].style.opacity = "0.4";
+            bulletLabel[swiper.activeIndex - 1].style.display = "none";
+          } else {
+            bulletInner[5].style.width = "0%";
+            bulletBackground[5].style.opacity = "0.4";
+            bulletLabel[5].style.display = "none";
+          }
+
+          swiper.activeIndex = 3;
+          swiper.slideTo(3, 0, false);
+
+          move(isPlay);
+        }
+      });
+
+      // 4th bullet
+      bulletBackground[3].addEventListener("click", (event) => {
+        // It doesn't work if it has same index with active slide
+        if (swiper.activeIndex != 4) {
+          clearInterval(id);
+
+          // initialize
+          width = 1;
+
+          if (swiper.activeIndex != 0) {
+            bulletInner[swiper.activeIndex - 1].style.width = "0%";
+            bulletBackground[swiper.activeIndex - 1].style.opacity = "0.4";
+            bulletLabel[swiper.activeIndex - 1].style.display = "none";
+          } else {
+            bulletInner[5].style.width = "0%";
+            bulletBackground[5].style.opacity = "0.4";
+            bulletLabel[5].style.display = "none";
+          }
+
+          swiper.activeIndex = 4;
+          swiper.slideTo(4, 0, false);
+
+          move(isPlay);
+        }
+      });
+
+      // 5th bullet
+      bulletBackground[4].addEventListener("click", (event) => {
+        // It doesn't work if it has same index with active slide
+        if (swiper.activeIndex != 5) {
+          clearInterval(id);
+
+          // initialize
+          width = 1;
+
+          if (swiper.activeIndex != 0) {
+            bulletInner[swiper.activeIndex - 1].style.width = "0%";
+            bulletBackground[swiper.activeIndex - 1].style.opacity = "0.4";
+            bulletLabel[swiper.activeIndex - 1].style.display = "none";
+          } else {
+            bulletInner[5].style.width = "0%";
+            bulletBackground[5].style.opacity = "0.4";
+            bulletLabel[5].style.display = "none";
+          }
+
+          swiper.activeIndex = 5;
+          swiper.slideTo(5, 0, false);
+
+          move(isPlay);
+        }
+      });
+
+      // 6th bullet
+      bulletBackground[5].addEventListener("click", (event) => {
+        // It doesn't work if it has same index with active slide
+        if (swiper.activeIndex != 0) {
+          clearInterval(id);
+
+          // initialize
+          width = 1;
+
+          if (swiper.activeIndex != 0) {
+            bulletInner[swiper.activeIndex - 1].style.width = "0%";
+            bulletBackground[swiper.activeIndex - 1].style.opacity = "0.4";
+            bulletLabel[swiper.activeIndex - 1].style.display = "none";
+          } else {
+            bulletInner[5].style.width = "0%";
+            bulletBackground[5].style.opacity = "0.4";
+            bulletLabel[5].style.display = "none";
+          }
+
+          swiper.activeIndex = 0;
+          swiper.slideTo(0, 0, false);
+
+          move(isPlay);
+        }
+      });
+
+      // ---------- Next and Prev Event ----------
+
       swiperNextBtn[0].addEventListener("click", (event) => {
         clearInterval(id);
 
@@ -469,12 +641,14 @@
         if (swiper.activeIndex >= 2 && swiper.activeIndex <= 6) {
           bulletInner[swiper.activeIndex - 2].style.width = "0%";
           bulletBackground[swiper.activeIndex - 2].style.opacity = "0.4";
+          bulletLabel[swiper.activeIndex - 2].style.display = "none";
         }
         // activeIndex == 1
         else {
           // last slide bullet will be initailized if it is looped
           bulletInner[5].style.width = "0%";
           bulletBackground[5].style.opacity = "0.4";
+          bulletLabel[5].style.display = "none";
           swiper.activeIndex = 1;
         }
 
@@ -491,28 +665,28 @@
         if (swiper.activeIndex == 1) {
           bulletInner[swiper.activeIndex].style.width = "0%";
           bulletBackground[swiper.activeIndex].style.opacity = "0.4";
-          console.log(swiper.activeIndex);
+          bulletLabel[swiper.activeIndex].style.display = "none";
         } else if (swiper.activeIndex == 2) {
           bulletInner[swiper.activeIndex].style.width = "0%";
           bulletBackground[swiper.activeIndex].style.opacity = "0.4";
-          console.log(swiper.activeIndex);
+          bulletLabel[swiper.activeIndex].style.display = "none";
         } else if (swiper.activeIndex == 3) {
           bulletInner[swiper.activeIndex].style.width = "0%";
           bulletBackground[swiper.activeIndex].style.opacity = "0.4";
-          console.log(swiper.activeIndex);
+          bulletLabel[swiper.activeIndex].style.display = "none";
         } else if (swiper.activeIndex == 4) {
           bulletInner[swiper.activeIndex].style.width = "0%";
           bulletBackground[swiper.activeIndex].style.opacity = "0.4";
-          console.log(swiper.activeIndex);
+          bulletLabel[swiper.activeIndex].style.display = "none";
         } else if (swiper.activeIndex == 5) {
           bulletInner[swiper.activeIndex].style.width = "0%";
           bulletBackground[swiper.activeIndex].style.opacity = "0.4";
-          console.log(swiper.activeIndex);
+          bulletLabel[swiper.activeIndex].style.display = "none";
         } else {
           // swiper.nextIndex = 0 => 6th Slide
           bulletInner[0].style.width = "0%";
           bulletBackground[0].style.opacity = "0.4";
-          console.log(swiper.activeIndex);
+          bulletLabel[0].style.display = "none";
         }
 
         move(isPlay);

@@ -1,0 +1,87 @@
+html,
+body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 80%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-second-bullet-flex {
+  background-color: white;
+  width: 100%;
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+
+.swiper-second-bullet-inner {
+  font-family: "samsungOne-700";
+  margin: 50px 10px 0 10px;
+  font-size: 18px;
+}
+
+#second-slide1 {
+  flex-direction: column;
+}
+
+#second-slide1-upper-flex {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  position: relative;
+  float: left;
+  justify-content: center;
+}
+
+#second-slide1-lower-flex {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  position: relative;
+  float: left;
+  justify-content: center;
+}
+
+.second-slide1-flex-inner {
+  background-color: #f4f4f4;
+}
