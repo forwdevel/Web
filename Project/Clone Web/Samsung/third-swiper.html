@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="css/third-swiper.css" />
+    <link rel="stylesheet" href="css/font.css" />
+  </head>
+  <body>
+    <h2 class="middle-swiper-head">Mobile & Computing</h2>
+
+    <!-- Swiper -->
+    <div class="swiper-third-bullet-flex">
+      <div class="swiper-third-bullet-inner">Galaxy Z Fold3 5G</div>
+      <div class="swiper-third-bullet-inner">Galaxy Buds2</div>
+      <div class="swiper-third-bullet-inner">Certified Re-Newed</div>
+      <div class="swiper-third-bullet-inner">Galaxy Tab S7 FE</div>
+      <div class="swiper-third-bullet-inner">Samsung Odyssey Neo G8</div>
+    </div>
+    <div class="swiper third-swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" id="third-slide1">
+          <img
+            class="third-slide1-img"
+            src="img/sec/Zfold3_S22_Trade_in_LOB_DT_743x418.png"
+          />
+          <div class="third-slide1-head">
+            Get a free, select Galaxy Watch4 with purchase.
+          </div>
+          <div class="third-slide1-content">
+            From $699.99 <span class="middle-line">$2,049.98</span> with
+            eligible trade-in.
+          </div>
+          <div class="third-btn-1">Learn more</div>
+          <div class="third-btn-2">Buy now</div>
+        </div>
+        <div class="swiper-slide" id="third-slide2">
+          <img
+            class="third-slide2-img"
+            src="img/sec/SDSAC-4250-Buds-Offer3-Merch-LOB-DT-743x418.png"
+          />
+          <div class="third-slide2-head">Meet your new Galaxy family.</div>
+          <div class="third-slide2-content">
+            Get Galaxy Buds from $25
+            <span class="middle-line">$149.99</span> with Galaxy S21 FE %G. From
+            $149.99 <span class="middle-line">$849.98</span> with eligible
+            trade-in.
+          </div>
+          <div class="third-btn-1">Learn more</div>
+          <div class="third-btn-2">Buy now</div>
+        </div>
+        <div class="swiper-slide" id="third-slide3">
+          <img
+            class="third-slide3-img"
+            src="img/sec/SDSAC-4179-CRN-S21F-W4-Merch-LOB-743x418.png"
+          />
+          <div class="third-slide3-head">
+            Galaxy S21 5G Certified Re-Newed Series
+          </div>
+          <div class="third-slide3-content">
+            Get up to $675 trade-in credit and a select watch from $50
+            <span class="middle-line">$249.99</span>.
+          </div>
+          <div class="third-btn-1">Learn more</div>
+          <div class="third-btn-2">Buy now</div>
+        </div>
+        <div class="swiper-slide" id="third-slide4">
+          <img
+            class="third-slide4-img"
+            src="img/sec/SDSAC-4321-TabS7FE-BookCover-HP-LOB-DT-743x418.png"
+          />
+          <div class="third-slide4-head">Open up a world of possibilities.</div>
+          <div class="third-slide4-content">
+            Get a free, select Book Cover (up to a $79.99 value) with Galaxy Tab
+            S7 FE. From $529.99 <span class="middle-line">$609.98</span>.
+          </div>
+          <div class="third-btn-1">Learn more</div>
+          <div class="third-btn-2">Buy now</div>
+        </div>
+        <div class="swiper-slide" id="third-slide5">
+          <img
+            class="third-slide1-img"
+            src="img/sec/SDSAC-4380-Neo_G8-Merch-LOB-743x418.png"
+          />
+          <div class="third-slide1-head">Take it to the next level</div>
+          <div class="third-slide1-content">
+            Reserve the Samsung Odyssey Neo G8 now to save $50.
+          </div>
+          <div class="third-btn-2">Reserve now</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".third-swiper", {
+        // Default type
+      });
+
+      var bullet = document.getElementsByClassName("swiper-third-bullet-inner");
+
+      bullet[0].addEventListener("click", (event) => {
+        swiper.slideTo(0, 500, true);
+      });
+
+      bullet[1].addEventListener("click", (event) => {
+        swiper.slideTo(1, 500, true);
+      });
+
+      bullet[2].addEventListener("click", (event) => {
+        swiper.slideTo(2, 500, true);
+      });
+
+      bullet[3].addEventListener("click", (event) => {
+        swiper.slideTo(3, 500, true);
+      });
+
+      bullet[4].addEventListener("click", (event) => {
+        swiper.slideTo(4, 500, true);
+      });
+
+      bullet[5].addEventListener("click", (event) => {
+        swiper.slideTo(5, 500, true);
+      });
+    </script>
+  </body>
+</html>

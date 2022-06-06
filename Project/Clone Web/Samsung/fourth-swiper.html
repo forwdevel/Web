@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="css/fourth-swiper.css" />
+    <link rel="stylesheet" href="css/font.css" />
+  </head>
+  <body>
+    <h2 class="middle-swiper-head">TV & Audio</h2>
+
+    <!-- Swiper -->
+    <div class="swiper-fourth-bullet-flex">
+      <div class="swiper-fourth-bullet-inner">The Frame</div>
+      <div class="swiper-fourth-bullet-inner">Samsung Neo QLED 4K</div>
+      <div class="swiper-fourth-bullet-inner">Samsung OLED</div>
+    </div>
+    <div class="swiper fourth-swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" id="fourth-slide1">
+          <img
+            class="fourth-slide1-img"
+            src="img/sec/04-HP-LOB-Frame-Desktop.png"
+          />
+          <div class="fourth-slide1-head">Memorial Day savings</div>
+          <div class="fourth-slide1-content">
+            Save up to $300 on The Frame QLED 4K TV (2022). Plus, get 50% off a
+            customizable bezel with your purchase.
+          </div>
+          <div class="fourth-btn">Shop now</div>
+        </div>
+        <div class="swiper-slide" id="fourth-slide2">
+          <img
+            class="fourth-slide2-img"
+            src="img/sec/03-HP-LOB-NQLED4K-Desktop.png"
+          />
+          <div class="fourth-slide2-head">Our most powerful 4K experience</div>
+          <div class="fourth-slide2-content">
+            Pre-order the Samsung Neo QLED 4K TV and get free installation with
+            your purchase.
+          </div>
+          <div class="fourth-btn">Pre-order now</div>
+        </div>
+        <div class="swiper-slide" id="fourth-slide3">
+          <img
+            class="fourth-slide3-img"
+            src="img/sec/04-HP-LOB-OLED-Desktop.png"
+          />
+          <div class="fourth-slide3-head">Illuminated with OLED</div>
+          <div class="fourth-slide3-content">
+            Millions of organic self-lit pixels deliver a picture quality so
+            real, it's surreal.
+          </div>
+          <div class="fourth-btn">Buy now</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".fourth-swiper", {
+        // Default type
+      });
+
+      var bullet = document.getElementsByClassName(
+        "swiper-fourth-bullet-inner"
+      );
+
+      bullet[0].addEventListener("click", (event) => {
+        swiper.slideTo(0, 500, true);
+      });
+
+      bullet[1].addEventListener("click", (event) => {
+        swiper.slideTo(1, 500, true);
+      });
+
+      bullet[2].addEventListener("click", (event) => {
+        swiper.slideTo(2, 500, true);
+      });
+
+      bullet[3].addEventListener("click", (event) => {
+        swiper.slideTo(3, 500, true);
+      });
+
+      bullet[4].addEventListener("click", (event) => {
+        swiper.slideTo(4, 500, true);
+      });
+
+      bullet[5].addEventListener("click", (event) => {
+        swiper.slideTo(5, 500, true);
+      });
+    </script>
+  </body>
+</html>
