@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fade test</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $("#header").click(function() {
+                $(".menu:nth-child(0)").fadeToggle(1000);
+                $(".menu:nth-child(1)").fadeToggle(2000);
+                $(".menu:nth-child(2)").fadeToggle(3000);
+                $(".menu:nth-child(3)").fadeToggle(4000);
+                $(".menu:nth-child(4)").fadeToggle(5000);
+                $(".menu:nth-child(5)").fadeToggle(6000);
+            });
+        });
+
+    </script>
+
+    <style>
+        * {
+            position: relative;
+            top: 5px;
+            padding: 50px;
+        }
+
+        body {
+            width: 50%;
+            height: 80%;
+            text-align: center;
+            color: whitesmoke;
+            margin: auto;
+            background-color: rgb(79, 58, 43);
+            font-size: 20px;
+            font-weight: bolder;
+        }
+
+        .menu {
+            display: none;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="header" style="background-color: floralwhite; color: rgb(126, 72, 33);">HEADER</div>
+    <div class="menu" style="background-color: dodgerblue;">MENU 1</div>
+    <div class="menu" style="background-color: peru;">MENU 2</div>
+    <div class="menu" style="background-color: lightslategray;">MENU 3</div>
+    <div class="menu" style="background-color: midnightblue;">MENU 4</div>
+    <div class="menu" style="background-color: cornflowerblue;">MENU 5</div>
+    <div class="menu" style="background-color: cadetblue;">MENU 6</div>
+</body>
+</html>

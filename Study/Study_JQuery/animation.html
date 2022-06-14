@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Test</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $("#header").click(function() {
+                $("#header").animate({top: '50px'}, 1000);
+                $("#header").animate({fontSize: '60px'}, 2000);
+                $("#text").animate({top: '30px'}, 2000);
+            });
+        });
+    </script>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            width: 50%;
+            margin: auto;
+            background-color: burlywood;
+            text-align: center;
+            font-size: 40px;
+            color: whitesmoke;
+        }
+        
+        #header {
+            margin: auto;
+            position: relative;
+            top: 500px;
+            width: 400px;
+            height: 150px;
+            background-color: rgb(63, 40, 12);
+        }
+
+        #text {
+            position: relative;
+            vertical-align: auto;
+            top: 45px;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <div id="text">
+             H E A D E R
+        </div>
+       </div>
+</body>
+</html>

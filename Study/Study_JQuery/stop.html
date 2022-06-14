@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>stop test</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#play").click(function() {
+                $('#action').fadeToggle(10000);
+            });
+            $("#stop").click(function() {
+                $("#action").stop();
+            });
+        });
+    </script>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            position: relative;
+            top: 300px;
+            width: 50%;
+            margin: auto;
+            font-weight: bolder;
+            background-color: rgb(38, 87, 38);
+            text-align: center;
+        }
+
+        #action {
+            font-size: 50px;
+            padding: 20px;
+            border: 10px solid whitesmoke;
+            color: white;
+        }
+        
+        #flex {
+            width: 100%;
+            position: relative;
+            font-size: 20px;
+            display: flex !important;
+            float: left;
+            display: block;
+            justify-content:center;
+        }
+
+        #stop, #play {
+            padding:5px 30px 8px 30px;
+            background-color: whitesmoke;
+            border-radius: 4px;
+            margin: 80px 80px;
+        }
+    </style>
+</head>
+<body>
+    <div id="action">Tester</div>
+
+    <div id="flex">
+        <div id="stop">stop</div>
+        <div id="play">play</div>
+    </div>
+</body>
+</html>
