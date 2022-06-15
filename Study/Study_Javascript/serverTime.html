@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Server Time</title>
+
+      <style>
+            body {
+                  position: relative;
+                  top: 200px;
+                  text-align: center;
+                  font-weight: bold;
+                  width: 100%;
+                  color: aliceblue;
+                  background-color: rgb(129, 146, 178);
+                  font-size: 80px;
+            }
+
+            * {
+                  padding: 0;
+                  margin: 0;
+            }
+
+            #year-area {
+                  margin: 10px 0;
+            }
+
+            #else {
+                  margin-bottom: 20px;
+            }
+
+            #area {
+                  background-color: rgb(73, 81, 124);
+                  font-size: 90px;
+                  padding: 30px 0;
+            }
+      </style>
+</head>
+<body>
+      <p id="year-area"></p>
+      <p id="else"></p>
+      <p id="area"></p>
+
+      <script>
+            const yearArea = document.getElementById('year-area');
+            const elseArea = document.getElementById('else');
+            const area = document.getElementById('area');
+            // area.innerHTML = Date();
+            
+            window.onload = setInterval(function autoRun() {
+                  const d = new Date();
+                  const h = d.getHours();
+                  const m = d.getMinutes();
+                  const s = d.getSeconds();
+                  const year = d.getFullYear();
+                  const month = d.getMonth();
+                  const date = d.getDate();
+                  if(h < 10) {
+                        let time = "0" + h + " : " + m +" : " + s;
+                        area.innerHTML = time;
+                  }
+                  else if(m < 10) {
+                        let time = h + " : 0" + m +" : " + s;
+                        area.innerHTML = time;
+                  }
+                  else if(s < 10) {
+                        let time = h + " : " + m +" : 0" + s;
+                        area.innerHTML = time;
+                  }
+                  else {
+                        let time = h + " : " + m +" : " + s;
+                        area.innerHTML = time;
+                  }
+
+                  yearArea.innerHTML = year;
+                  
+                  let elseText = month + "월 " + date + "일"
+                  elseArea.innerHTML = elseText;
+
+
+                  autoRun();
+            }, 1000);
+
+      </script>
+</body>
+</html>

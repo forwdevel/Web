@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Remove</title>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script>
+            $(document).ready(function() {
+                  $(".red").eq(0).click(function() {
+                        $(".header").eq(0).text("AFTER REMOVE");
+                        $("#remove").remove();
+                  });
+            });
+            $(document).ready(function() {
+                  $(".red").eq(1).click(function() {
+                        $(".header").eq(1).text("AFTER EMPTY");
+                        $("#empty").empty();
+                  });
+            });
+      </script>
+
+      <style>
+            * {
+                  padding: 0;
+                  margin: 0;
+            }
+
+            body {
+                  position: relative;
+                  top: 50px;
+                  width: 100%;
+                  font-weight: bolder;
+                  text-align: center;
+                  background-color: rgb(81, 97, 111);
+                  color: aliceblue;
+            }
+
+            h1 {
+                  margin: 20px 0px;
+            }
+
+            .box {
+                  width: 500px;
+                  margin: 30px auto;
+                  background-color: rgb(140, 140, 96);
+                  border-radius: 5px;
+                  border: 5px solid white;
+            }
+
+           ul li:nth-child(5) {
+                  margin: 0 0 30px 0;
+            }
+
+            li {
+                  list-style: none;
+            }
+
+            div {
+                  margin: 30px 0;
+            }
+
+            .red {
+                  padding: 8px;
+                  background-color: blanchedalmond;
+                  color:rgb(219, 117, 89);
+                  border-radius: 5px;
+                  cursor: pointer;
+            }
+
+            .red:hover {
+                  background-color: aliceblue;
+            }
+      </style>
+</head>
+<body>
+      <h1 id="desc">DISCRIPTION</h1>
+      <div><span class="red">remove( )</span> - Removes the selected element (and its child elements)</div>
+      <div><span class="red">empty( )</span> - Removes the child elements from the selected element</div>
+
+      <div id="remove-box" class="box">
+            <h1 class="header">BEPORE REMOVE</h1>
+            <ul id="remove">
+                  <li>First content</li>
+                  <li>Second content</li>
+                  <li>Third content</li>
+                  <li>Fourth content</li>
+                  <li>Fifth content</li>
+            </ul>
+      </div>
+
+      <div id="empty-box" class="box">
+            <h1 class="header">BEPORE EMPTY</h1>
+            <ul id="empty">
+                  <li>First content</li>
+                  <li>Second content</li>
+                  <li>Third content</li>
+                  <li>Fourth content</li>
+                  <li>Fifth content</li>
+            </ul>
+      </div>
+
+
+</body>
+</html>

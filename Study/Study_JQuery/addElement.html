@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Add Elements</title>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script>
+            $(document).ready(function() {
+                  $(".red:nth-child(1)").click(function() {
+                        $("#work").append("<li>append</li>");
+                  })
+                  $(".red:nth-child(2)").click(function() {
+                        $("#work").prepend("<li>prepend</li>");
+                  })
+                  $(".red:nth-child(3)").click(function() {
+                        $("#work").before("<li>before</li>");
+                  })
+                  $(".red:nth-child(4)").click(function() {
+                        $("#work").after("<li>after</li>");
+                  })
+            })
+      </script>
+      <style>
+            * {
+                  padding: 0;
+                  margin: 0;
+            }
+
+            body {
+                  width: 100%;
+                  position: relative;
+                  top: 300px;
+                  background-color: rgb(67, 86, 153);
+                  color: white;
+                  text-align: center;
+                  font-weight: bolder;
+            }
+
+            ul {
+                  width: 80%;
+                  margin: 80px auto;
+            }
+
+            li {
+                  list-style: none;
+                  margin: 30px auto;
+            }
+
+            .red {
+                  background-color: bisque;
+                  color: rgb(222, 88, 88);
+                  border-radius: 5px;
+                  padding: 4px 8px 7px 8px;
+                  cursor: pointer;
+            }
+
+            #work li {
+                  background-color: bisque;
+                  color: rgb(222, 88, 88);
+                  border-radius: 5px;
+                  padding: 4px 8px 7px 8px;
+                  margin: 10px 0;
+                  width: 100px;
+                  margin: auto;
+            }
+      </style>
+</head>
+<body>
+      <h1>Add Elements</h1>
+
+      <ul>
+            <li class="text">
+                  <span class="red">append( )</span> - Inserts content at the end of the selected elements
+            </li>
+            <li class="text">
+                  <span class="red">prepend( )</span> - Inserts content at the beginning of the selected elements
+            </li>
+            <li class="text">
+                  <span class="red">after( )</span> - Inserts content after the selected elements
+            </li>
+            <li class="text">
+                  <span class="red">before( )</span> -  Inserts content before the selected elements
+            </li>
+      </ul>
+
+      <ul id="work">
+      </ul>
+</body>
+</html>

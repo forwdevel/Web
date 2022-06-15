@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>getContents test</title>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script>
+            $(document).ready(function() {
+                  $("#text-button").click(function() {
+                        alert("Text: " + $("#text").text());
+                  });
+                  $("#html-button").click(function() {
+                        alert("Html: " + $("#html").html());
+                  });
+                  $("#val-button").click(function() {
+                        alert("Val: " + $("#val").val());
+                  });
+                  $("#attr-button").click(function() {
+                        alert("attr: " + $("#attr").attr("li"));
+                  });
+            });
+      </script>
+
+      <style>
+            * {
+                  padding: 0;
+                  margin: 0;
+            }
+
+            body {
+                  background-color: rgb(84, 112, 161);
+                  width: 100%;
+                  color: white;
+                  text-align: center;
+                  position: relative;
+                  top: 180px;
+            }
+
+            body * {
+                  margin: 50px 0;
+            }
+            
+            li {
+                  margin: 20px 0;
+            }
+
+            .red {
+                  color: rgb(210, 68, 68);
+                  background-color: antiquewhite;
+                  border-radius: 5px;
+                  padding: 2px 5px 3px 5px;
+                  font-weight: bold;
+            }
+            
+            .button {
+                  font-weight: bold;
+                  margin: auto;
+                  padding: 10px;
+                  width: 100px;
+            }
+
+            .button:hover {
+                  cursor: pointer;
+                  border-radius: 2px;
+                  color: rgb(210, 68, 68);
+                  background-color: antiquewhite;
+            }
+      </style>
+</head>
+<body>
+      <h1>Get Content</h1>
+      <ul>
+            <li id="text">
+                  <span class="red">text( )</span> - Sets or returns the text content of selected elements
+            </li>
+            <li id="html">
+                  <span class="red">html( )</span> - Sets or returns the content of selected elements (including HTML markup)
+            </li>
+            <li id="val">
+                  <span class="red">val( )</span> - Sets or returns the value of form fields
+            </li>
+            <li id="attr">
+                  <span class="red">attr( )</span> - Sets or returns the value of arribute values
+            </li>
+
+      </ul>
+      <div id="text-button" class="button">Show text</div>
+      <div id="html-button" class="button">Show html</div>
+      <div id="val-button" class="button">Show val</div>
+      <div id="attr-button" class="button">Show attr</div>
+</body>
+</html>

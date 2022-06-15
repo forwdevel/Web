@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Get and Set CSS Classes</title>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script>
+            $(document).ready(function() {
+                  $("span").click(function() {
+                        $("span").removeClass("red").addClass("blue");
+                  });
+            });
+      </script>
+      <style>
+            * {
+                  padding: 0;
+                  margin: 0;
+            }
+
+            body {
+                  position: relative;
+                  top: 30px;
+                  color: antiquewhite;
+                  background-color: rgb(79, 127, 112);
+                  text-align: center;
+            }
+
+            h1 {
+                  border-bottom: 6px antiquewhite solid;
+                  padding: 20px;
+            }
+
+            .red {
+                  background-color: antiquewhite;
+                  color: rgb(238, 132, 93);
+                  font-weight: bold;
+                  border-radius: 4px;
+                  padding: 3px 6px 4px 6px;
+            }
+            
+            .blue {
+                  color: cornflowerblue;
+                  font-size: 20px;
+            }
+
+            ul {
+                  margin-top: 40px;
+            }
+
+            li {
+                  margin-top: 20px;
+                  list-style: none;
+            }
+
+            .blue {
+                  background-color: antiquewhite;
+                  color: rgb(124, 132, 165);
+                  font-weight: bold;
+                  border-radius: 4px;
+                  padding: 3px 6px 4px 6px;
+            }
+      </style>
+</head>
+<body>
+      <h1>jQuery Manipulation CSS</h1>
+      <ul>
+            <span style="font-weight: bold;"> jQuery has several methods for CSS manipulation. We will look at the following methods:</span>
+            <li>
+                  <span class="red">addClass( )</span> - Adds one or more classes to the selected elements
+            </li>
+            <li>
+                  <span class="red">removeClass( )</span> - Removes one or more classes from the selected elements
+            </li>
+            <li>
+                  <span class="red">toggleClass( )</span> - Toggles between adding/removing classes from the selected elements
+            </li>
+            <li>
+                  <span class="red">css( )</span> - Sets or returns the style attribute
+            </li>
+      </ul>
+</body>
+</html>
