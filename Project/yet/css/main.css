@@ -1,0 +1,222 @@
+        /* main only */
+
+        .swiper {
+            position: relative;
+            z-index: auto;
+            width: 100%;
+            height: 500px;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .swiper-button-prev {
+            background-image: url("../img/btn_visual_prev.png") !important;
+            background-repeat: no-repeat;
+            background-size: 20px 30px;
+            background-position: center;
+        }
+          
+        .swiper-button-next {
+            background-image: url("../img/btn_visual_next.png") !important;
+            background-repeat: no-repeat;
+            background-size: 20px 30px;
+            background-position: center;
+        }
+          
+        .swiper-button-next::after {
+            display: none;
+        }
+          
+        .swiper-button-prev::after {
+            display: none;
+        }
+
+        section {
+            display: block;
+        }
+
+        #dishes img {
+            width: 250px;
+            padding: 0 18px;
+        }
+
+        #dishes {
+            text-align: center;
+        }
+
+        #dishes h2 {
+            font-size: 34px;
+            margin: 70px 0 100px 0;
+            font-weight:500;
+        }
+
+        #dishes ul {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bolder;
+            width: 100%;
+        }
+
+        #dishes ul li div {
+            margin: 10px 0 50px 0;
+        }
+
+        #betterDays {
+            background-image: url('../img/bg_better-days.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            width: 80%;
+            height: 50%;
+            position: relative;
+            padding: 84px 20px 60px;
+            display: flex;
+            float: left;
+            justify-content: space-around;
+            align-items: center;
+            padding: 0 10%;
+        }
+        
+
+        #betterDays img {
+            align-content: center;
+            width: 533px;
+            height: auto;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        .more-btn {
+            width: auto;
+            padding: 14px 40px;
+            background: #BA0C2F;
+            border-radius: 100px;
+            border: none;
+            cursor: pointer;
+            text-align: center;
+            color: white;
+            font-weight: bold;
+            margin-top: 60px;
+        }
+
+        #betterDays #textbox {
+            padding: 60px 123px 58px 123px;
+            width: 566px;
+            height: 210px;
+            background: rgba(255, 255, 255, 0.56);
+            position: relative;
+            margin: 84px 0 0 0;
+        }
+
+        #betterDays p {
+            font-size: 2.2rem;
+            color: #2B2B2B;
+            font-weight: 800;
+            line-height: 50px;
+            display: block;
+        }
+
+        #mainProducts ul {
+            width: 100%;
+            display: flex;
+            float: left;
+            text-align: center;
+            justify-content: space-around;
+        }
+        
+        #mainProducts ul li {
+            margin: 0 20px;
+        }
+
+        .h2 {
+            font-size: 34px;
+            padding: 100px 0 20px 0;
+            font-weight:500;
+            text-align: center;
+            position: relative;
+        }
+
+        .btn-more {
+            font-weight: bolder;
+            margin: 0 0 30px 10px;
+        }
+
+        #amazingKreations {
+            background-color: #BA0C2F;
+            padding: 70px 0px;
+            position: relative;
+            display: flex;
+            float: left;
+            width: 100%;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        #amazingKreations img {
+            width: 271px;
+        }       
+        
+        #bg-bnd a{
+            color: white;
+            font-weight: bolder;
+        }     
+        
+        #bg-bnd img {
+            margin: 25px 0 15px 0;
+        }
+
+        #bg-bnd > div{
+            position: relative;
+            display: flex;
+            float: left;
+            width: 100%;
+            justify-content: space-around;
+            align-items: end;
+            padding: 0 20px;
+        }
+
+        #medias {
+            width: 90%;
+        }
+
+        #medias .big-img {
+            width: calc(40.5% - 5px);
+        }
+
+        #medias .links1{
+            margin-top: 0;
+            display: flex;
+            flex-flow: row;
+            flex-wrap: wrap;
+            width: 100%;
+            justify-content: flex-start;
+        }

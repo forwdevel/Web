@@ -1,0 +1,108 @@
+* {
+    padding:0;
+    margin: 0;
+}
+html,
+body {
+    position: relative;
+    height: 100%;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    padding-top: 110px;
+}
+
+header {
+    background-color: rgb(186, 12, 47);
+    position: fixed;
+    z-index: 2;
+    position: fixed;
+    width: auto;
+    color: white;
+    height: auto;
+    font-family: 'kellogg';
+}
+
+.uphead {
+    background-color: rgb(186, 12, 47);
+    position: fixed;
+    top:  0; left: 0; right: 0;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    padding: 55px 100px 0px 105px;
+    z-index: 1001;
+    height: 53px;
+}
+
+.dwhead {
+    position: fixed;
+    width: 1980px;
+    height: 150px;
+    top: 0;
+    z-index: 1000;
+}
+
+.wheat {
+    position: absolute;
+    width: 280px;
+    top: 0; left: 0;
+    z-index: 2100;
+}
+
+header a{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+header > div {
+    display: block;
+}
+
+#dropmenu ul li {
+    position: relative;
+    float: left;
+    padding: 0px 20px;
+}
+
+#dropmenu ul li a {
+    height: 50px;
+    align-items: start;
+}
+
+#icons ul li {
+    position: relative;
+    float: left;
+    padding: 0px 4px;
+}
+
+#dropmenu ul li a {
+    display: block;
+}
+
+#dropmenu ul li ul {
+    position: absolute; /*수직*/
+    left: 0;
+    width: 200px;
+    background: #fff;
+    display: none;
+}
+
+.top-drop {
+    margin: 50px 0 0 0;
+}
+
+#hover li ul li a {
+    font-weight: lighter;
+    margin: 10px 0;
+}

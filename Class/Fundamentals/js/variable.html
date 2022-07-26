@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <script>
+                var name;
+                name = "Abraham";
+                var age = 10;
+                document.write(name + " " + age);
+        
+                var a = 10;
+                var b = 20;
+                var c = 0.3;
+                var d = 0.2;
+                document.write("<br>");
+                document.write("<br>a + b = "+ (a + b));
+                document.write("<br>a - b = "+ (a - b));
+                document.write("<br>c * d = "+ (c * d));
+                document.write("<br>c + d = "+ (c / d) + "<br>");
+        
+                var single = false;
+                var male = true;
+                document.write("<br>");
+                document.write("<br>single : " + single);
+                document.write("<br>male : " + male + "<br>");
+        
+                document.write("<br>");
+
+                if(a>0) {
+                        document.write("a는 0보다 크다<br>");
+                } else {
+                        document.write("a는 0보다 작다<br>");
+                }
+
+                if(a>b) {
+                        document.write("a는 b보다 크다<br>");
+                } else {
+                        document.write("a는 b보다 작다<br>");
+                }
+
+                var cmd = 1;
+                switch(cmd) {
+                        case 1 :
+                                 document.write("case 1");
+                                 break;
+                        case 2 :
+                                 document.write("case 2");
+                                 break;
+                        case 3 :
+                                 document.write("case 3");
+                                 break;
+                        case 4 :
+                                 document.write("case 4");
+                                 break;
+                        default :
+                                 document.write("올바르지 않은 명령입니다.");
+                                 break;
+                }
+
+                var i = 0;
+                while (i<5 ) {
+                        document.write((i + 1) + ".Javascript" + <br/>);
+                        i++;
+                }
+        </script>
+</head>
+<body>
+</body>
+</html>
