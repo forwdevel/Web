@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script src = "https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+</head>
+<body>
+        <script>
+                var markerIcon = new google.maps.MarkerImage("../../img/marker.png");
+
+                function MyPos() {
+                        if(navigator.geolocation) {
+                                navigator.geolocation.getCurrentPosition(CurPosition, (error) => {
+                                switch(error.code) {
+                                        case error.PERMISSION_DENIED :
+                                                document.getElementById("result").innerHTML = "현재 정보에 대한 권한이 없습니다";
+                                                break;
+                                                
+                                        case error.POSITION_UNAVAILABLE :
+                                                document.getElementById("result").innerHTML = "현재 위치 정보룰 구할 수 없습니다.";
+                                                break;
+                                                
+                                        case error.TIMEOUT :
+                                                document.getElementById("result").innerHTML = "시간 제한을 초과하였습니다.";
+                                                break;
+                                                
+                                }
+                        });
+                        }
+                }
+
+                function CurPosition(position) {
+                        var lat = position.coords.latitude;
+                        var lng = position.coords.longitude;
+                        document.getElementById("result").innerHTML =  "위도 : " + lat  + " 경도 : " + lng;
+                        var latlng = new google.maps.LatLng(lat, lng);
+                        var options = {
+                                zoom : 15,
+                                center : latlng,
+                                mapTypeId: 'roadmap'
+                        }
+                        var map = new google.maps.Map(document.getElementById("map"), options);
+                        var marker = new google.maps.Marker({
+                                map : map,
+                                icon : markerIcon,
+                                title : "현재 위치",
+                                position : latlng
+                        });
+                }
+        </script>
+        <button onclick="MyPos()" type ="button">현재 나의 위치</button> <br>
+        <div id="result"></div>
+        <div id="map" style="width: 500px; height: 500px;"></div>
+</body>
+</html>

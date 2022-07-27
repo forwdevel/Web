@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script>
+                function changeColor(c) {
+                        document.getElementById("target"). style.backgroundColor = c;
+                }
+                function OnButtonDown(button) {
+                        button.style.color = "#ff0000";
+                }
+                function OnButtonUp(button) {
+                        button.style.color = "#00ff00";
+                }
+        </script>
+
+        <style>
+                form {
+                        margin: 50px 10px;
+                }
+        </style>
+</head>
+<body id="target">
+        <form method ="post">
+                <input type="radio" name="C1" value = "v1" onclick="changeColor('lightblue')">Lightblue
+                <input type="radio" name="C1" value = "v2" onclick="changeColor('lightgreen')">Lightgreen
+        </form>
+        <form action="">
+                <button onmousedown="OnButtonDown(this)" onmouseup="OnButtonUp(this)">Press!</button>
+        </form>
+</body>
+</html>

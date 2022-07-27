@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=\, initial-scale=1.0">
+        <title>Document</title>
+</head>
+<body>
+        <script>
+                // var : local scope -> 함수 밖에서는 사용 불가능
+                // var을 생략하고 정의하면 전역으로 정의
+                // e.g. message = "hi" (전역)
+                // e.g. var message = "hi" (지역)
+                var a = 2;
+                alert(a + 1);
+
+                a = 'my first site';
+                alert(a);
+
+
+                //typeof : 변수의 타입 반환
+                var message = "hi";
+                alert(typeof message);
+                alert(typeof(message));
+                alert(typeof 95);
+
+
+                // undifined : 변수의 타입을 선언했으나 값을 할당하지 않은 경우에 반환
+                // null : 어떠한 유효한 값도 아니라는 뜻
+                // NaN : 'not a number', 숫자가 아니라는 의미(숫자를 반환할 것으로 의도한 동작이 실패했을 떄 반환)      e.g. 0/0
+                // === : 값과 타입이 모두 같을 경우 true 반환
+                // == : 값이 같을 경우 true 반환
+
+                alert(null == undefined);                // true
+                alert(null === undefined);             // false
+                alert(true == 1);                                // true
+                alert(true === 1);                             // false
+                alert(true == '1');                              // true
+                alert(true === '1');                           // false
+                alert(0 === -0);                                // true
+                alert(NaN == NaN);                        // false
+
+
+                // features of NaN
+                // 1. NaN은 어떠한 값과도 일치하지 않는다. (NaN끼리도 마찬가지)
+                // 2. isNaN() : NaN 값을 구분
+
+                alert(NaN == NaN);      // false
+                alert(isNaN(NaN));      // true
+                alert(isNaN(10));       // false
+                alert(isNaN("10"));     //f alse
+                alert(isNaN("blue"));   // true : 숫자로 변경 불가능
+                alert(isNaN(true)); // false (true == 1)
+
+                // == 의 반대의미 : !=
+                // ===의 반대의미 : !==
+
+                // boolean의 대체제
+                if(0) {
+                        alert(1);
+                } 
+                if(1) {
+                        alert(2);
+                }
+
+                if(!'') {
+                        alert('빈 문자열');
+                }
+                if(!undefined) {
+                        alert('undifined');
+                }
+                var a;
+                if(!a) {
+                        alert("값이 할당되지 않은 변수");
+                }
+                if(!null) {
+                        alert('null');
+                }
+                if(!NaN) {
+                        alert('NaN');
+                }
+                if(!(0/0)) {
+                        alert('0/0');
+                }
+
+                // 문자열의 성질
+                // 불변 (immutable) : 문자열이 일단 만들어지면 그 값을 바꿀 수 없음. 변경하고 싶으면, 기존의 문자열울 파괴하고 새 문자열울 채워줘야 함
+                var text = 'java';
+                taxt  += 'script';
+                alert(text);
+
+                // 문자열로 변환
+                // toString(int x) : x진법으로 변환
+                
+                var age = 20;
+                var ageAsString = age.toString();
+                alert(ageAsString);
+
+                var found = true;
+                var foundAsString = found.toString();
+                alert(foundAsString);
+
+
+                // 객체
+                // toString() : 객체를 문자열로 변환해 반환
+                // valueOf() : 객체를 나타내는 문자열이나 숫자, booleand을 반환
+
+
+                // 원시 값 : 단순한 데이터
+                        // e.g. Undefined, Null, Boolean, 숫자, 문자열
+
+                // 참조 값 : 여러 값으로 구성되는 객체
+                        // 메모리에 저장된 객체
+                        // Javascript는 메모리 위치에 직접 접근하는 것을 허용하지 않음
+
+                // 변수에 값을 할당하면 자바 스크립트 엔진은 해당 값이 원시 데이터인지 참조인지 판단
+
+
+                // 동적 프로퍼티
+                        // 동적으로 프로퍼티를 추가할 수 있는 값은 참조값 뿐
+                        // 원시 값에는 프로퍼티가 없지만 추가하려 해도 에러가 발생하지는 않음
+
+
+                // 매개변수 전달
+                        // 매개변수는 오직 값을만 전달
+                        // 매개변수를 값 형태로 넘기면 해당 값은 지역변수에 복사
+     
+                function addTen(num) {
+                        num += 10;
+                        return num;
+                }
+
+                var count = 20;
+                var result = addTen(count);
+
+                alert(count);
+                alert(result);
+
+
+                // instanceof : 어떤 타입의 객체인가를 반환
+                var person = new Object();
+                var person2 = "simon";
+
+                alert(person instanceof Object);        // person의 변수가 Object의 인스턴스인가?
+                alert(person2 instanceof Object);      // person2의 변수가 Object의 인스턴스인가?
+                alert(typeof person2)
+
+                
+                // 원시 래퍼 타입
+                var numberObject = new Number(10);
+                var numberValue = 10;
+
+                alert(typeof numberObject);     //"object"
+                alert(typeof numberValue); // "number"
+                alert(numberObject instanceof Number);  // true
+                alert(numberValue instanceof Number);   // false
+
+
+                // String 타입
+                var StringObject = new String("Hello world!");
+                alert(stringObject.length);
+                alert(stringObject.charAt(1));
+                alert(stringObject[1]);
+
+                // concat() : '+'보다 빠르게 동작
+                var stringValue = "hello";
+                var result = stringValue.concat(" world", "!");
+                var string1 = 'seoul';
+                var string1 = 'education';
+                alert(result);
+                alert(stringValue);
+                alert(string1 + ' ' + string2);
+
+                // 문자열 추출
+                stringValue = "hello world!";
+                alert(stringValue.slice(3));                  // "lo world"
+                alert(stringValue.substring(3));        // "lo wolrd"
+                alert(stringValue.substr(3));              // "lo world"
+                alert(stringValue.slice(3, 7));             // "lo w"
+                alert(stringValue.substring(3, 7));   // "lo w"
+                alert(stringValue.substr(3, 7));         // "lo w"
+
+                // 문자열 위치
+                alert(stringValue.indexOf("o"));                // 4
+                alert(stringValue.lastIndexOf("o"));        // 7
+
+                stringValue = "Lorem ipsum dolor sit amet, consectetur adipisicing elit";
+                var positions = new Array();
+                var pos = stringValue.indexOf("e");
+
+                while(pos > -1) {
+                        positions.push(pos);
+                        pos = stringValue.indexOf("e", pos + 1);
+                }
+
+                alert(positions);
+
+                
+                // DOM(Document Object Model) : 문서 객체 모델
+                // Browser가 Page의 문서 객체 모델을 생성
+                // HTML 문서의 계층적인 구조를 트리로 표현
+
+                // BOM(Browser Object Model)
+                // 웹 브라우저를 객체로 표현
+</script>
+</body>
+</html>

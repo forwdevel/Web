@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <script>
+                function check_param(param1, param2) {
+                        var tname = param1.value;
+                        var tbirth = param2.value;
+                        const regExpName = /^[가-힣a-zA-Z]*$/g;
+                        // 모든 글자가 모두 한글또는 영문이어야 true 반환
+                        const regExpBirth = /^[0-9]*$/g;
+                        // 모든 글자가 모두 숫자이어야 true 반환
+
+                        // check name which is null
+                        if(tname == '') {
+                                alert("성명을 입력하세요.");
+                                return;
+                        } 
+                        
+                        // check birth which is null
+                        if(tbirth == '') {
+                                alert("생년월일을 입력하세요.");
+                                return;
+                        }
+
+                        // check form of name
+                        if(regExpName.test(tname)) {
+                                if(tname.length > 30) {
+                                        alert("성명은 최대 30자까지 입력이 가능합니다.");
+                                        return;
+                                }
+                        } else {
+                                alert("성명은 영문 또는 한글만 입력이 가능합니다.");
+                                return;
+                        }
+
+                        // check form of birth
+                        if(regExpBirth.test(tbirth)) {
+                                if(tbirth.length != 6) {
+                                        alert("생일은 문자와 특수문자를 제외한 숫자 6자리로 입력해주세요.");
+                                        return;
+                                }
+                        } else {
+                                alert("생일은 문자와 특수문자를 제외한 숫자 6자리로 입력해주세요.");
+                                return;
+                        }
+
+                        // perfectly correct
+                        alert("확인 되었습니다.");
+                }
+        </script>
+</head>
+<body>
+        <form action="">
+                회원가입 <p>
+                성명 <input type="text" id="tname" name = "name"> <br>
+                생년월일 <input type="text" id="tbirth" name="birth"> <br>
+                <input type="button" value="확인" onclick="check_param(document.getElementById('tname'), document.getElementById('tbirth'))">
+        </form>
+</body>
+</html>
