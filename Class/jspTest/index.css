@@ -1,0 +1,91 @@
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background-image: url(background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: 'samsungOneKorean 400';
+  font-weight: bolder;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  color: white;
+  position: absolute;
+  top: 30px;
+  right: 40px;
+}
+
+nav > div {
+  float: left;
+  margin-right: 20px;
+}
+
+#mainSection {
+  position: relative;
+  height: 1000px;
+}
+
+.swiper {
+  width: 98%;
+  height: 80px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#logo {
+  font-size: 40px;
+  text-align: center;
+  height: 100px;
+  padding-top: 40px;
+  color: white;
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  height: 90px;
+  width: 100%;
+  background-color: rgb(71, 71, 71);
+  text-align: center;
+  color: rgb(192, 191, 191);
+  font-weight: 100;
+  padding-top: 10px;
+  font-size: 12px;
+}
+

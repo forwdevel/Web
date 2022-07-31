@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Swiper demo</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="css/index.css">
+  </head>
+
+  <body>
+    <section id="side-bar">
+        <div id="logo">
+            <img src="img/Owen_District_Logo.png">
+        </div>
+        <div id="menu">
+          <div class="menu-inner">ABOUT</div>
+          <div class="menu-inner">NOTICE</div>
+          <div class="menu-inner">SCHEDULE</div>
+          <div class="menu-inner">CONTACT</div>
+        </div>
+    </section>
+
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <div class="header">
+                Personal Community <br> Server
+            </div>
+            <div id="text1" class= "text">
+              <p>'Owen District' is made by personal server communication and storage. </p>
+              <p>If you want to join us. </p>
+              <p>Please contact to server manager.</p>
+            </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="header">
+            Support Personal Page
+          </div>
+          <div id="text2" class="text">
+            <p>We can make a your personal page if you want and you are a our member.</p>
+            <p>Make and manage your page.</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="header">Regular Server Inspection</div>
+          <div id="text3" class="text">
+            <p>Do not worry about your data and connection of server.</p>
+            <p>Our regular server inspection can prevent of this.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        direction: 'vertical',
+        loop : true,
+        autoplay: {
+        delay: 8000,
+        },
+      });
+    </script>
+  </body>
+</html>
