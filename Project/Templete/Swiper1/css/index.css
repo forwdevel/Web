@@ -15,6 +15,11 @@
         flex-direction: row;
       }
 
+      a{
+        color: white;
+        text-decoration: none;
+      }
+
       #side-bar {
         background-color: rgb(23, 23, 23);
         width: 360px;
