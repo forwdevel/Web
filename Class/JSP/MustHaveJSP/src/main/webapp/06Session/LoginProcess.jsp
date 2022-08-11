@@ -1,8 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-    <%@ page import = "membership.MemberDAO" %>
     <%@ page import = "membership.MemberDTO" %>
-    
+    <%@ page import = "membership.MemberDAO" %>
     <%
     String userId = request.getParameter("user_id");
     String userPwd = request.getParameter("user_pw");
@@ -18,7 +17,7 @@
     
     if(memberDTO.getId() != null) {
     	session.setAttribute("UserId", memberDTO.getId());
-    	session.setAttribute("UserId", memberDTO.getName());
+    	session.setAttribute("UserName", memberDTO.getName());
     	response.sendRedirect("LoginForm.jsp");
     } else {
     	request.setAttribute("LoginErrMsg", "로그인 오류입니다.");
@@ -32,6 +31,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-
+	
 </body>
 </html>

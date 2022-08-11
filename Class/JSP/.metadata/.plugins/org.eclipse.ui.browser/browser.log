@@ -13,3 +13,17 @@
 8월 05, 2022 15:57:52.538 [8128:10724:0805/155752.525:ERROR:device_event_log_impl.cc(214)] [15:57:52.525] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
 8월 05, 2022 15:57:52.597 [8128:10724:0805/155752.527:ERROR:device_event_log_impl.cc(214)] [15:57:52.526] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
 8월 05, 2022 17:05:29.146 [7024:6204:0805/170529.128:ERROR:interface_endpoint_client.cc(665)] Message 0 rejected by interface blink.mojom.WidgetHost
+
+8월 08, 2022 11:05:22.931 NEW SESSION
+8월 08, 2022 11:05:22.931 [11760:3600:0808/110522.929:ERROR:device_event_log_impl.cc(214)] [11:05:22.929] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+8월 08, 2022 11:05:23.190 [11760:3600:0808/110522.930:ERROR:device_event_log_impl.cc(214)] [11:05:22.931] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+8월 08, 2022 11:54:28.785 기존 브라우저 세션에서 여는 중입니다.
+8월 08, 2022 17:33:36.898 기존 브라우저 세션에서 여는 중입니다.
+8월 08, 2022 18:00:01.318 [10600:14576:0808/180001.304:ERROR:CONSOLE(1)] "Session is unregistering, can't dispatch pending call to DOM.getDocument", source: devtools://devtools/bundled/devtools-frontend/front_end/core/sdk/sdk.js (1)
+8월 08, 2022 18:00:45.629 [10600:14576:0808/180045.616:ERROR:CONSOLE(1)] "Session is unregistering, can't dispatch pending call to DOM.getDocument", source: devtools://devtools/bundled/devtools-frontend/front_end/core/sdk/sdk.js (1)
+8월 08, 2022 18:05:57.899 [3804:14432:0808/180557.887:ERROR:CONSOLE(1)] "Session is unregistering, can't dispatch pending call to DOM.getDocument", source: devtools://devtools/bundled/devtools-frontend/front_end/core/sdk/sdk.js (1)
+8월 08, 2022 18:06:21.294 [3804:14432:0808/180621.281:ERROR:CONSOLE(1)] "Session is unregistering, can't dispatch pending call to DOM.getDocument", source: devtools://devtools/bundled/devtools-frontend/front_end/core/sdk/sdk.js (1)
+8월 08, 2022 18:06:43.634 [3804:14432:0808/180643.620:ERROR:CONSOLE(1)] "Session is unregistering, can't dispatch pending call to DOM.getDocument", source: devtools://devtools/bundled/devtools-frontend/front_end/core/sdk/sdk.js (1)
+8월 08, 2022 18:07:23.812 [15236:4380:0808/180722.991:ERROR:CONSOLE(1)] "Session is unregistering, can't dispatch pending call to DOM.getDocument", source: devtools://devtools/bundled/devtools-frontend/front_end/core/sdk/sdk.js (1)
+8월 08, 2022 18:08:19.611 [15236:4380:0808/180819.565:ERROR:CONSOLE(1)] "Session is unregistering, can't dispatch pending call to DOM.getDocument", source: devtools://devtools/bundled/devtools-frontend/front_end/core/sdk/sdk.js (1)
+8월 08, 2022 18:08:40.185 [15236:4380:0808/180840.171:ERROR:CONSOLE(1)] "Session is unregistering, can't dispatch pending call to DOM.getDocument", source: devtools://devtools/bundled/devtools-frontend/front_end/core/sdk/sdk.js (1)
