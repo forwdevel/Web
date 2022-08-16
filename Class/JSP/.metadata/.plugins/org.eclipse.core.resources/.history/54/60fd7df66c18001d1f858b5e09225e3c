@@ -1,0 +1,7 @@
+package el;
+
+public class MyELClass {
+		public String getGender(String jumin) {
+			String returnStr = "";
+		}
+}

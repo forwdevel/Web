@@ -1,0 +1,16 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri = "http://java.sun.com/jsp/jstl/core" %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JSTL - set 1</title>
+</head>
+<body>
+	<c:set var="directVal" value = "100"/>
+	<c:set var="elVar" value = "${ directVar mod 5 }"/>
+	<c:set var="expVal" value = "<%= new Date() %>"/>
+	<c:set var="betweenVal">변수값 요렇게 설정</c:set>
+</body>
+</html>

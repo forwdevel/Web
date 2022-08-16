@@ -1,0 +1,31 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>FileUpload</title>
+<script>
+	function validateForm(form) {
+		if(form.name.value == "") {
+			alert("작성자를 입력하세요.");
+			form.name.focus();
+			return false;
+		}
+		if(form.title.value == "") {
+			alert("첨부파일은 필수 입력입니다.");
+			form.title.focus();
+			return false;
+		}
+		if(form.attachedFile.value == "") 
+			alert("첨부파일은 필수 입력입니다.");
+		form.title.focus();
+		return false;
+		}
+	}
+</script>
+</head>
+<body>
+
+</body>
+</html>

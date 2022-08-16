@@ -1,4 +1,8 @@
+<<<<<<< Updated upstream
 <?xml version="1.0" encoding="UTF-8"?>
+=======
+<?xml version="1.0" encoding="UTF-8"?>
+>>>>>>> Stashed changes
 <!--
   Licensed to the Apache Software Foundation (ASF) under one or more
   contributor license agreements.  See the NOTICE file distributed with
@@ -37,7 +41,11 @@
          UserDatabaseRealm to authenticate users
     -->
     <Resource auth="Container" description="User database that can be updated and saved" factory="org.apache.catalina.users.MemoryUserDatabaseFactory" name="UserDatabase" pathname="conf/tomcat-users.xml" type="org.apache.catalina.UserDatabase"/>
+<<<<<<< Updated upstream
   	<Resource auth="Container" driverClassName="oracle.jdbc.OracleDriver"  type = "javax.sql.DataSource" initialSize="0" minIdle="5" maxTotal="20" maxIdle="20" maxWaitMillis="5000" url="jdbc:oracle:thin:@localhost:1521:xe" name = "dbcp_myoracle" username="c##green" password="green1234"/>
+=======
+  	<Resource auth="Container" driverClassName="oracle.jdbc.OracleDriver"  type = "javax.sql.DataSource" initialSize="0" minIdle="5" maxTotal="20" maxIdle="20" maxWaitMillis="5000" url="jdbc:oracle:thin:@localhost:1521:xe" name = "dbcp_myoracle" username="c##green" password="green1234"/>
+>>>>>>> Stashed changes
   </GlobalNamingResources>
 
   <!-- A "Service" is a collection of one or more "Connectors" that share

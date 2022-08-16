@@ -1,0 +1,7 @@
+<classpath>
+  <container id="MustHaveJSP!org.eclipse.jst.j2ee.internal.web.container">
+    <entry id="Z:/workspace/Github/Web/Class/JSP/MustHaveJSP/src/main/webapp/WEB-INF/lib/cos.jar">
+      <source-attachment-path>C:/Users/Administrator.User -2022EXQXA/Downloads/cos-22.05/lib/cos.jar</source-attachment-path>
+    </entry>
+  </container>
+</classpath>
