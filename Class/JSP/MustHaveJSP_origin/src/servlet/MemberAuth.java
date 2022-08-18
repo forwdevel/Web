@@ -56,7 +56,6 @@ public class MemberAuth extends HttpServlet {
         req.getRequestDispatcher("/13Servlet/MemberAuth.jsp").forward(req, resp);
     }
 
-    @Override
     public void destroy() {
         dao.close();
     }

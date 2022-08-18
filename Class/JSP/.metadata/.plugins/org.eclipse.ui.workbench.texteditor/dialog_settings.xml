@@ -8,6 +8,7 @@
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="IOException"/>
 			<item value="inactiveToday"/>
 			<item value="20000"/>
 			<item value="connector"/>

@@ -1,0 +1,35 @@
+package servlet;
+
+import java.io.IOException;
+
+import javax.servlet.ServletContext;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import membership.MemberDAO;
+
+public class MemberAuth {
+	MemberDAO dao;
+	
+	public void init() throws ServletException {
+		ServletContext application = this.getServletContext();
+		String driver = application.getInitParameter("OracleDriver");
+		String connectUrl = application.getInitParameter("OracleURL");
+		String oId = application.getInitParameter("OracleId");
+		String oPass = application.getInitParameter("OraclePwd");
+		
+		dao = new MemberDAO(driver, connectUrl, oId, oPass);
+	}
+	
+	public void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		String admin_id = this.getInitParameter("admin_id");
+
+		String id = req.getParameter("id");
+		String pass = req.getParameter("pass");
+		
+		MemberDTO memberDTO = dao.getMemberDTO(id, pass);
+		
+		String memberName = dao.getMemberDTO(id, pass);
+	}
+}
