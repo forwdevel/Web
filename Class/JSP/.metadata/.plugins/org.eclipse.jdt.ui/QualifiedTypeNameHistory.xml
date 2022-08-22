@@ -17,4 +17,6 @@
     <fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
     <fullyQualifiedTypeName name="fileupload.FileUtil"/>
     <fullyQualifiedTypeName name="utils.JSFunction"/>
+    <fullyQualifiedTypeName name="javax.mail.Authenticator"/>
+    <fullyQualifiedTypeName name="javax.mail.Message.RecipientType"/>
 </qualifiedTypeNameHistroy>
