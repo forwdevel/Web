@@ -19,11 +19,11 @@ public class NaverSMTP {
 	public NaverSMTP() {
 		serverInfo = new Properties();
 		serverInfo.put("mail.smtp.host", "smtp.naver.com");
-		serverInfo.put("mail.smtp.port", "587");
+		serverInfo.put("mail.smtp.port", "995");
 		serverInfo.put("mail.smtp.starttls.enable", "true");
 		serverInfo.put("mail.smtp.auth", "true");
 		serverInfo.put("mail.smtp.debug", "true");
-		serverInfo.put("mail.smtp.socketFactory.port", "587");
+		serverInfo.put("mail.smtp.socketFactory.port", "995");
 		serverInfo.put("mail.smtp.socketFactory.class", "javax.net.ssl.SSLSocketFactory");
 		serverInfo.put("mail.smtp.socketFactory.fallback", "false");
 		

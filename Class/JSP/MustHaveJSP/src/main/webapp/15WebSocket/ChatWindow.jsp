@@ -10,6 +10,10 @@ var chatWindow, chatMessage, chatId;
 
 // 채팅창이 열리면 대화창, 메시지 입력창, 대화명 표시란으로 사용할 DOM 객체 저장
 window.onload = function() {
+	window.focus(); // 현재 윈도우를 최상단에 위치
+	// window.moveTo(0,0); // 현재 웹 페이지의 창 크기를 0,0으로 고정
+	window.resizeTo(320,600);// 웹페이지 크기 고정
+	window.scrollTo(0,250); //페이지 상단으로 스크롤 고정
     chatWindow = document.getElementById("chatWindow");
     chatMessage = document.getElementById("chatMessage");
     chatId = document.getElementById('chatId').value;    
@@ -18,7 +22,7 @@ window.onload = function() {
 // 메시지 전송
 function sendMessage() {
     // 대화창에 표시
-    chatWindow.innerHTML += "<div class='myMsg'>" + chatMessage.value + "</div>"
+    chatWindow.innerHTML += "<div class='myMsg' style='float:right;'>" + chatMessage.value + "</div><div style='clear:both;'></div>"
     webSocket.send(chatId + '|' + chatMessage.value);  // 서버로 전송
     chatMessage.value = "";  // 메시지 입력창 내용 지우기
     chatWindow.scrollTop = chatWindow.scrollHeight;  // 대화창 스크롤
@@ -61,11 +65,11 @@ webSocket.onmessage = function(event) {
         if (content.match("/")) {  // 귓속말
             if (content.match(("/" + chatId))) {  // 나에게 보낸 메시지만 출력
                 var temp = content.replace(("/" + chatId), "[귓속말] : ");
-                chatWindow.innerHTML += "<div>" + sender + "" + temp + "</div>";
+                chatWindow.innerHTML += "<div class='private' style='float : left;'>" + sender + " : " + temp + "</div><div style='clear:both;'></div>";
             }
         }
         else {  // 일반 대화
-            chatWindow.innerHTML += "<div>" + sender + " : " + content + "</div>";
+            chatWindow.innerHTML += "<div class='outer' style='float : left;'>" + sender + " : " + "<div class='everyone'>" + content + "</div></div><div style='clear:both;'></div>";
         }
     }
     chatWindow.scrollTop = chatWindow.scrollHeight; 
@@ -73,11 +77,78 @@ webSocket.onmessage = function(event) {
 </script>
 <style>  <!-- 대화창 스타일 지정 -->  
 #chatWindow{border:1px solid black; width:270px; height:310px; overflow:scroll; padding:5px;}
-#chatMessage{width:236px; height:30px;}
-#sendBtn{height:30px; position:relative; top:2px; left:-2px;}
-#closeBtn{margin-bottom:3px; position:relative; top:2px; left:-2px;}
-#chatId{width:158px; height:24px; border:1px solid #AAAAAA; background-color:#EEEEEE;}
-.myMsg{text-align:right;}
+#chatMessage{width:236px; height:30px; position:fixed; left : 2px; bottom:2px; color:black; background-color:white; border:none;}
+.private {
+background-color : rgba(255,255,255, 0.7);
+    color: black;
+    padding: 8px 16px 8px 20px;
+    margin: 5px 14px;
+    border-radius: 15px;
+    float: right;
+    display: flex;
+    vertical-align: middle;
+    align-items: center;
+}
+.everyone {
+    background-color: rgb(255,255,255);
+    color: black;
+    padding: 8px 16px 8px 20px;
+    margin: 5px 14px;
+    border-radius: 15px;
+    float: right;
+    display: flex;
+    vertical-align: middle;
+    align-items: center;
+}
+#sendBtn {
+    height: 40px;
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    border: none;
+    background-color: yellow;
+    width: 60px;
+    border-radius: 0px 4px 4px 0px;
+}
+#chatMessage {
+    width: 251px;
+    height: 40px;
+    position: fixed;
+    left: 5px;
+    bottom: 5px;
+    color: black;
+    background-color: white;
+    border: none;
+    border-radius: 4px 0px 0px 4px;
+}
+#closeBtn {
+    margin-bottom: 3px;
+    position: relative;
+    top: 2px;
+    right: 2px;
+    color: white;
+    border: none;
+    background-color: rgb(61, 61, 61);
+    border-radius: 4px;
+    width: 70px;
+    height: 40px;
+}
+#chatId {
+    width: 158px;
+    height: 24px;
+    background: none;
+    border: 0px;
+    color: white;
+    font-weight: bold;
+}
+.myMsg {
+    background-color: yellow;
+    color: black;
+    padding: 8px 20px 8px 16px;
+    margin: 5px 0px;
+    border-radius: 15px;
+}
+body {background-color:rgb(104, 173, 219); color:white;}
 </style>
 </head>
 

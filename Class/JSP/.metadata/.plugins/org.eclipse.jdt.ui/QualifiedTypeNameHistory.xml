@@ -19,4 +19,5 @@
     <fullyQualifiedTypeName name="utils.JSFunction"/>
     <fullyQualifiedTypeName name="javax.mail.Authenticator"/>
     <fullyQualifiedTypeName name="javax.mail.Message.RecipientType"/>
+    <fullyQualifiedTypeName name="org.apache.catalina.util.URLEncoder"/>
 </qualifiedTypeNameHistroy>
