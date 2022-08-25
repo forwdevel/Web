@@ -1,13 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="maven-compiler-plugin"/>
+		<item key="selection" value="lom"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="lom"/>
+			<item value="compile"/>
+			<item value="junit"/>
+			<item value="log4j"/>
+			<item value="compiler"/>
+			<item value="comfiler"/>
 			<item value="maven-compiler-plugin"/>
 			<item value="maven-war"/>
 			<item value="maven-compiler"/>
