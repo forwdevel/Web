@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="BoardMapperTests" project="ex02" tests="3" started="3" failures="0" errors="0" ignored="0">
+  <testsuite name="org.zerock.mapper.BoardMapperTests" time="14.404">
+    <testcase name="testGetList" classname="org.zerock.mapper.BoardMapperTests" time="14.035"/>
+    <testcase name="testInsertSelectKey" classname="org.zerock.mapper.BoardMapperTests" time="0.344"/>
+    <testcase name="testInsert" classname="org.zerock.mapper.BoardMapperTests" time="0.024"/>
+  </testsuite>
+</testrun>

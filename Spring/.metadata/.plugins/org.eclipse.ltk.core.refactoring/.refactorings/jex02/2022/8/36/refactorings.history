@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete 2 elements from project &apos;jex02&apos;&#x0D;&#x0A;- Original project: &apos;jex02&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     jex02/src/test/java/snippet&#x0D;&#x0A;     snippet.Snippet.java" description="Delete elements" element1="/src\/test\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;snippet" elements="1" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1661742156032" subPackages="false" version="1.0"/>
+</session>

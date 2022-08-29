@@ -1,0 +1,33 @@
+package org.zerock.config;
+
+import org.apache.ibatis.session.SqlSessionFactory;
+import org.mybatis.spring.SqlSessionFactoryBean;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+
+import com.zaxxer.hikari.HikariConfig;
+
+import javax.sql.DataSource;
+
+@Configuration
+@ComponentScan(basePackages= {"org.zerock.sample"})
+public class RootConfig {
+	@Bean
+	public SqlSessionFactory sqlSessionFactory() throws Exception {
+		SqlSessionFactoryBean sqlSessionFactory = new SqlSessionFactoryBean();
+		SqlSessionFactory.setDataSource(dataSource());
+		return (SqlSessionFactory) sqlSessionFactory.getObject();
+	}
+	
+	@Bean
+	public DataSource dataSource() {
+		HikariConfig hikariConfig = new HikariConfig();
+		hikariConfig.setDriverClassName("oracle.jdbc.driver.OracleDriver");
+		hikariConfig.setJdbcUrl("jdbc:oracle:thin:@localhost:1521:XE");
+		hikariConfig.setUsername("c##green");
+		hikariConfig.setPassword("green1234");
+		
+		HikariDataSource dataSource = new HikariDataSource(hikariConfig);
+	}
+}

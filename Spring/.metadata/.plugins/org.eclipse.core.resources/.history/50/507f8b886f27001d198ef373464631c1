@@ -1,0 +1,8 @@
+package org.zerock.service;
+
+@Log4j
+@Service
+@AllArgsConstructor
+public class BoardServiceImpl {
+
+}
