@@ -1,6 +1,7 @@
-package org.zerock.domain;
+package org.zerock.Domain;
 
 import java.util.Date;
+
 import lombok.Data;
 
 @Data

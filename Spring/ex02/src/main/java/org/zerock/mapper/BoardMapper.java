@@ -2,7 +2,7 @@ package org.zerock.mapper;
 
 import java.util.List;
 
-import org.zerock.domain.BoardVO;
+import org.zerock.Domain.BoardVO;
 
 public interface BoardMapper {
 //	@Select("select * from tbl_board where bno > 0")
