@@ -1,8 +1,0 @@
-package smtp;
-
-import javax.mail.*;
-
-public class NaverSMTP {
-	private final Properties serverInfo;
-	private final Authenticator auth;
-}
