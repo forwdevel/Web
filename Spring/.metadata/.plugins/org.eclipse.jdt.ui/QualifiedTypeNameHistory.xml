@@ -18,8 +18,10 @@
     <fullyQualifiedTypeName name="org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry"/>
     <fullyQualifiedTypeName name="javax.servlet.ServletRegistration"/>
     <fullyQualifiedTypeName name="javax.servlet.ServletRegistration.Dynamic"/>
-    <fullyQualifiedTypeName name="org.springframework.test.context.junit4.SpringJUnit4ClassRunner"/>
-    <fullyQualifiedTypeName name="org.zerock.config.RootConfig"/>
     <fullyQualifiedTypeName name="org.zerock.domain.BoardVO"/>
     <fullyQualifiedTypeName name="org.zerock.service.BoardServiceImpl"/>
+    <fullyQualifiedTypeName name="org.springframework.test.context.junit4.SpringJUnit4ClassRunner"/>
+    <fullyQualifiedTypeName name="org.zerock.config.RootConfig"/>
+    <fullyQualifiedTypeName name="lombok.Setter"/>
+    <fullyQualifiedTypeName name="org.zerock.Domain.BoardVO"/>
 </qualifiedTypeNameHistroy>

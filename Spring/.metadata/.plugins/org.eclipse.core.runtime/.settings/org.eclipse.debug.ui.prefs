@@ -4,4 +4,5 @@ org.eclipse.debug.ui.cancel_launch_with_compile_errors=always
 org.eclipse.debug.ui.save_dirty_editors_before_launch=never
 org.eclipse.debug.ui.switch_perspective_on_suspend=always
 org.eclipse.debug.ui.switch_to_perspective=always
+preferredDetailPanes=DefaultDetailPane\:DefaultDetailPane|
 preferredTargets=default\:default|
