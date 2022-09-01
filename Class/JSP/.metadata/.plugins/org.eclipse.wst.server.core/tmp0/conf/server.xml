@@ -152,7 +152,9 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="Z:\workspace\Github\Web\Class\JSP\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="Z:\workspace\Github\Web\Class\JSP\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\MustHaveJSP" path="/MustHaveJSP" reloadable="true" source="org.eclipse.jst.jee.server:MustHaveJSP"/></Host>
+      <Context docBase="E:\workspace\Web\Class\JSP\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="E:\workspace\Web\Class\JSP\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\Web-study-11" path="/Web-study-11" reloadable="true" source="org.eclipse.jst.jee.server:Web-study-11">
+      	<Resource auth="Container" driverClassName="oracle.jdbc.OracleDriver" maxActive="20" maxIdel="10" maxWait="-1" name="jdbc/myoracle" password="green1234" type="javax.sql.DataSource" url="jdbc:oracle:thin:@127.0.0.1:xe" username="c##green"/>
+      </Context></Host>
     </Engine>
   </Service>
 </Server>

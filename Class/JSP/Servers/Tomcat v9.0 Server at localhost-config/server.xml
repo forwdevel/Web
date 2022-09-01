@@ -1,8 +1,4 @@
-<<<<<<< Updated upstream
 <?xml version="1.0" encoding="UTF-8"?>
-=======
-<?xml version="1.0" encoding="UTF-8"?>
->>>>>>> Stashed changes
 <!--
   Licensed to the Apache Software Foundation (ASF) under one or more
   contributor license agreements.  See the NOTICE file distributed with
@@ -41,11 +37,6 @@
          UserDatabaseRealm to authenticate users
     -->
     <Resource auth="Container" description="User database that can be updated and saved" factory="org.apache.catalina.users.MemoryUserDatabaseFactory" name="UserDatabase" pathname="conf/tomcat-users.xml" type="org.apache.catalina.UserDatabase"/>
-<<<<<<< Updated upstream
-  	<Resource auth="Container" driverClassName="oracle.jdbc.OracleDriver"  type = "javax.sql.DataSource" initialSize="0" minIdle="5" maxTotal="20" maxIdle="20" maxWaitMillis="5000" url="jdbc:oracle:thin:@localhost:1521:xe" name = "dbcp_myoracle" username="c##green" password="green1234"/>
-=======
-  	<Resource auth="Container" driverClassName="oracle.jdbc.OracleDriver"  type = "javax.sql.DataSource" initialSize="0" minIdle="5" maxTotal="20" maxIdle="20" maxWaitMillis="5000" url="jdbc:oracle:thin:@localhost:1521:xe" name = "dbcp_myoracle" username="c##green" password="green1234"/>
->>>>>>> Stashed changes
   </GlobalNamingResources>
 
   <!-- A "Service" is a collection of one or more "Connectors" that share
@@ -161,7 +152,10 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="MustHaveJSP" path="/MustHaveJSP" reloadable="true" source="org.eclipse.jst.jee.server:MustHaveJSP"/></Host>
+      <Context docBase="Web-study-11" path="/Web-study-11" reloadable="true" source="org.eclipse.jst.jee.server:Web-study-11">
+      	<Resource name = "jdbc/myoracle" auth="Container" type="javax.sql.DataSource" driverClassName="oracle.jdbc.OracleDriver"
+      	 url="jdbc:oracle:thin:@127.0.0.1:xe" username = "c##green" password="green1234" maxActive="20" maxIdel="10" maxWait="-1"/>
+      </Context></Host>
     </Engine>
   </Service>
 </Server>
